@@ -1,0 +1,41 @@
+{
+  "heading": "Häufige Fragen",
+  "intro": "Hier finden Sie Antworten auf die häufigsten Fragen zur Zusammenarbeit mit Provenly Homes.",
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "Für welche Eigentümer ist Provenly Homes geeignet?",
+      "answer": "Provenly Homes ist für Eigentümer, die ihre Immobilie professionell betreiben lassen möchten – mit klaren Prozessen, Struktur und Verantwortung. Besonders gut passt unser Ansatz, wenn Entlastung, Transparenz und langfristige Qualität im Fokus stehen."
+    },
+    {
+      "id": "faq-2",
+      "question": "Ab welcher Objektgröße oder Ausgangslage ist eine Zusammenarbeit sinnvoll?",
+      "answer": "Es gibt keine feste Mindestgröße. Entscheidend ist nicht die Anzahl der Einheiten, sondern der Anspruch an Qualität, Ertrag und Entlastung. Im Erstgespräch schauen wir gemeinsam, ob und wie eine Zusammenarbeit sinnvoll aufgebaut werden kann."
+    },
+    {
+      "id": "faq-3",
+      "question": "Wie unabhängig bleibe ich als Eigentümer in Entscheidungen?",
+      "answer": "Sie behalten jederzeit die strategische Entscheidungshoheit. Wir übernehmen operative Umsetzung, Beratung und Steuerung – Entscheidungen mit langfristiger Wirkung treffen wir immer gemeinsam."
+    },
+    {
+      "id": "faq-4",
+      "question": "Was passiert, wenn sich eine Zusammenarbeit als nicht sinnvoll erweist?",
+      "answer": "Dann sprechen wir das offen an. Provenly Homes ist auf langfristige, funktionierende Partnerschaften ausgelegt – nicht auf das Festhalten an Modellen, die keinen Mehrwert schaffen."
+    },
+    {
+      "id": "faq-5",
+      "question": "Wie flexibel ist die Zusammenarbeit bei veränderten Lebenssituationen?",
+      "answer": "Immobilien begleiten Lebensphasen – und genau dafür ist unser Modell gemacht. Ob Verkauf, Eigennutzung oder strategische Neuausrichtung: Wir passen den Rahmen gemeinsam an oder beenden ihn sauber und transparent."
+    },
+    {
+      "id": "faq-6",
+      "question": "Wie stellt Provenly Homes Qualität im laufenden Betrieb sicher?",
+      "answer": "Durch klare Standards, feste Prozesse und kontinuierliche Kontrolle. Wir arbeiten nicht reaktiv, sondern vorausschauend – mit dem Ziel, Probleme zu vermeiden, bevor sie entstehen."
+    },
+    {
+      "id": "faq-7",
+      "question": "Wie läuft der Einstieg ab, ohne sofort Verpflichtungen einzugehen?",
+      "answer": "Der Einstieg beginnt immer mit einem unverbindlichen Erstgespräch. Dabei klären wir Ziele, Rahmenbedingungen und Erwartungen – erst danach entscheiden beide Seiten, ob und wie es weitergeht."
+    }
+  ]
+}

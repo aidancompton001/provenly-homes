@@ -1,0 +1,61 @@
+{
+  "heading": "Preise & individuelles Modell",
+  "subheading": "Entdecken Sie das Provenly Homes Modell für eine strukturierte und verlässliche Kurzzeitvermietung.",
+  "startvorteil": {
+    "heading": "Der Provenly Homes Startvorteil",
+    "description": "Ein Upgrade, das andere berechnen würden. Wir bringen Ihr Objekt vor dem ersten Gast auf Provenly Homes Niveau – strategisch, gestalterisch und operativ. Ohne Zusatzkosten. Als Grundlage unserer Arbeit."
+  },
+  "packages": [
+    {
+      "id": "remote",
+      "name": "Provenly Remote",
+      "percentage": 15,
+      "subtitle": "Für Eigentümer, die Prozesse digital steuern lassen möchten.",
+      "features": [
+        "Inserat & Preissteuerung",
+        "Kalender & Reporting",
+        "Systembetrieb",
+        "Erweiterungen bei Bedarf möglich"
+      ],
+      "cta": "Modell wählen"
+    },
+    {
+      "id": "manage",
+      "name": "Provenly Manage",
+      "percentage": 20,
+      "subtitle": "Für Eigentümer, die mehr operative Unterstützung wünschen.",
+      "features": [
+        "Alles aus Remote",
+        "Gäste-Kommunikation",
+        "Aktive Umsatzoptimierung",
+        "Erweiterungen bei Bedarf möglich"
+      ],
+      "cta": "Modell wählen"
+    },
+    {
+      "id": "complete",
+      "name": "Provenly Complete",
+      "percentage": 25,
+      "subtitle": "Für Eigentümer, die alles delegieren wollen.",
+      "features": [
+        "Alles aus Manage",
+        "Reinigung & Vor-Ort-Koordination",
+        "Schaden- & Dienstleistermanagement",
+        "Erweiterungen bei Bedarf möglich"
+      ],
+      "cta": "Modell wählen"
+    }
+  ],
+  "custom": {
+    "heading": "Individuelles Modell",
+    "description": "Wenn Sie einzelne Bausteine wünschen oder besondere Anforderungen haben, stellen Sie sich Ihr Provenly Modell individuell zusammen.",
+    "cta": "Modell konfigurieren",
+    "ctaNote": "2–3 Minuten · unverbindlich · persönliche Rückmeldung"
+  },
+  "addons": [
+    { "id": "gewerbeobjekte", "name": "Gewerbeobjekte" },
+    { "id": "content-studio", "name": "Content Studio" },
+    { "id": "gaesteservices", "name": "Gästeservices" },
+    { "id": "technik-mieten", "name": "Technik mieten" }
+  ]
+}

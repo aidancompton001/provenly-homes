@@ -1,0 +1,169 @@
+{
+  "title": "Kontakt Provenly Homes | Kurzzeitvermietung für Eigentümer in NRW",
+  "heading": "Lassen Sie uns über Ihre Immobilie sprechen.",
+  "body": "Ob erste Fragen oder konkrete Pläne – wir hören zu, prüfen ehrlich und sagen Ihnen, ob und wie eine Zusammenarbeit sinnvoll ist.",
+  "sections": [
+    {
+      "id": "persoenliche-information",
+      "title": "Persönliche Information",
+      "fields": [
+        {
+          "id": "name",
+          "label": "Name",
+          "type": "text",
+          "placeholder": "Max Mustermann",
+          "required": true
+        },
+        {
+          "id": "email",
+          "label": "E-Mail",
+          "type": "email",
+          "placeholder": "E-Mail-Adresse",
+          "required": true
+        },
+        {
+          "id": "phone",
+          "label": "Telefon",
+          "type": "tel",
+          "placeholder": "Telefonnummer",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "objektdaten",
+      "title": "Objektdaten",
+      "fields": [
+        {
+          "id": "objektart",
+          "label": "Objektart",
+          "type": "radio",
+          "options": [
+            { "label": "Wohnung", "value": "wohnung" },
+            { "label": "Haus", "value": "haus" },
+            { "label": "Mehrfamilienhaus", "value": "mehrfamilienhaus" },
+            { "label": "Gewerbe", "value": "gewerbe" },
+            { "label": "Apartment Hotel", "value": "apartment-hotel" },
+            { "label": "Sonstiges", "value": "sonstiges" }
+          ],
+          "required": true
+        },
+        {
+          "id": "standort",
+          "label": "Standort",
+          "type": "radio",
+          "options": [
+            { "label": "Köln", "value": "koeln" },
+            { "label": "Düsseldorf", "value": "duesseldorf" },
+            { "label": "Bonn", "value": "bonn" },
+            { "label": "Rhein-Erft-Kreis", "value": "rhein-erft-kreis" },
+            { "label": "Sonstige Stadt", "value": "sonstige" }
+          ],
+          "required": true
+        },
+        {
+          "id": "adresse",
+          "label": "Adresse",
+          "type": "text",
+          "placeholder": "Straße, Hausnummer, PLZ",
+          "required": false
+        },
+        {
+          "id": "wohnflaeche",
+          "label": "Wohnfläche in m²",
+          "type": "number",
+          "placeholder": "z.B. 50",
+          "suffix": "m²",
+          "required": false
+        },
+        {
+          "id": "zimmer",
+          "label": "Anzahl Zimmer",
+          "type": "number",
+          "placeholder": "z.B. 2",
+          "required": false
+        },
+        {
+          "id": "objektlink",
+          "label": "Objektlink",
+          "type": "text",
+          "placeholder": "Airbnb, Booking oder Website Link",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "kurzzeitvermietung",
+      "title": "Kurzzeitvermietung",
+      "fields": [
+        {
+          "id": "aktuelle-situation",
+          "label": "Aktuelle Situation",
+          "type": "radio",
+          "options": [
+            { "label": "Noch nicht vermietet", "value": "noch-nicht-vermietet" },
+            { "label": "Langzeit vermietet", "value": "langzeit-vermietet" },
+            { "label": "Selbstgenutzt", "value": "selbstgenutzt" },
+            { "label": "Bereits auf Airbnb/Booking", "value": "bereits-aktiv" }
+          ],
+          "required": true
+        },
+        {
+          "id": "moeblierungsstatus",
+          "label": "Möblierungsstatus",
+          "type": "radio",
+          "options": [
+            { "label": "Vollmöbliert", "value": "vollmoebliert" },
+            { "label": "Teilmöbliert", "value": "teilmoebliert" },
+            { "label": "Unmöbliert", "value": "unmoebliert" },
+            { "label": "Noch unklar", "value": "noch-unklar" }
+          ],
+          "required": true
+        },
+        {
+          "id": "ziel",
+          "label": "Was ist Ihr Ziel?",
+          "type": "checkbox",
+          "options": [
+            { "label": "Weniger Aufwand", "value": "weniger-aufwand" },
+            { "label": "Höhere Einnahmen", "value": "hoehere-einnahmen" },
+            { "label": "Professionelle Betreuung", "value": "professionelle-betreuung" },
+            { "label": "Ich informiere mich erst einmal", "value": "information" }
+          ],
+          "required": false
+        },
+        {
+          "id": "zeitrahmen",
+          "label": "Wann soll es losgehen?",
+          "type": "radio",
+          "options": [
+            { "label": "Sofort", "value": "sofort" },
+            { "label": "In den nächsten 3 Monaten", "value": "3-monate" },
+            { "label": "Später", "value": "spaeter" },
+            { "label": "Noch offen", "value": "noch-offen" }
+          ],
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "fortfahren",
+      "title": "Wie möchten Sie fortfahren?",
+      "subtitle": "Sie entscheiden, wie der nächste Schritt aussehen soll.",
+      "fields": [
+        {
+          "id": "naechster-schritt",
+          "label": "Nächster Schritt",
+          "type": "checkbox",
+          "options": [
+            { "label": "Einschätzung per Mail", "value": "einschaetzung-mail" },
+            { "label": "Telefonisches Erstgespräch", "value": "telefonisches-erstgespraech" },
+            { "label": "Objektbegehung vor Ort", "value": "objektbegehung" }
+          ],
+          "required": false
+        }
+      ]
+    }
+  ],
+  "submitLabel": "Anfrage senden"
+}

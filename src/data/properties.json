@@ -1,0 +1,116 @@
+{
+  "collectionHeading": "Provenly Homes Signature Collection",
+  "collectionSubheading": "Das sichtbare Ergebnis eines funktionierenden Systems.",
+  "collectionDescription": "Ausgewählte Beispielobjekte im Provenly Standard.",
+  "properties": [
+    {
+      "slug": "rheinabend-suite",
+      "name": "Rheinabend Suite",
+      "location": "Köln-Deutz",
+      "district": "Deutz",
+      "address": "Deutzer Freiheit 12, 50679 Köln",
+      "size": "62m²",
+      "capacity": "2 Gäste",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "feature": "Rheinblick",
+      "pricePerNight": 169,
+      "rating": 4.9,
+      "reviewCount": "120+",
+      "tagline": "Perfect location and beautiful design",
+      "amenities": [
+        "Private Dachterrasse",
+        "Rheinnähe",
+        "Zentral aber ruhig",
+        "Digitaler Check-in",
+        "Free WiFi",
+        "Parkplatz",
+        "Modernes Design"
+      ],
+      "highlights": [],
+      "distances": [
+        { "label": "Rheinpromenade", "time": "6 Min" },
+        { "label": "Cafés", "time": "5 Min" },
+        { "label": "Altstadt", "time": "8 Min" },
+        { "label": "ÖPNV", "time": "7 Min" }
+      ],
+      "extras": [
+        "Digitale Gästemappe mit Restaurant-/Kulturempfehlungen",
+        "Parkinfos",
+        "Hausrichtlinien"
+      ]
+    },
+    {
+      "slug": "rheinblick-family-residence",
+      "name": "Rheinblick Family Residence",
+      "location": "Köln-Lindenthal",
+      "district": "Lindenthal",
+      "address": "Aachener Str. 241, 50931 Köln",
+      "size": "104m²",
+      "capacity": "bis 6 Gäste",
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "feature": "Garten",
+      "pricePerNight": 219,
+      "rating": 4.8,
+      "reviewCount": "120+",
+      "tagline": "Perfekte Lage und wunderschönes Design. Der Balkon am Abend",
+      "amenities": [
+        "Großzügiger Wohnbereich",
+        "Balkon mit Rheinblick",
+        "Dachterrasse",
+        "Parkplatz",
+        "WiFi",
+        "Persönlicher Check-in"
+      ],
+      "highlights": [],
+      "distances": [
+        { "label": "Rheinpromenade (Auto)", "time": "15 Min" },
+        { "label": "Spielplätze", "time": "8 Min" },
+        { "label": "Cafés", "time": "3 Min" },
+        { "label": "ÖPNV", "time": "7 Min" }
+      ],
+      "extras": [
+        "Digitale Gästemappe"
+      ]
+    },
+    {
+      "slug": "urban-skyline-loft",
+      "name": "Urban Skyline Loft",
+      "location": "Köln-Bayenthal",
+      "district": "Bayenthal",
+      "address": "Gustav-Heinemann-Ufer 146, Köln-Bayenthal",
+      "size": "68m²",
+      "capacity": "max 4 Gäste",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "feature": "Stadtnähe",
+      "pricePerNight": 179,
+      "rating": 5.0,
+      "reviewCount": "120+",
+      "tagline": "Modernes Design-Loft mit Balkon über einer lebendigen Einkaufsstraße — perfekt für City-Reisende, Paare und Business-Gäste.",
+      "amenities": [
+        "Digitaler Check-in",
+        "WLAN",
+        "Parkplatz",
+        "Großzügiger Balkon",
+        "Dachterrasse (Außenbereich)"
+      ],
+      "highlights": [
+        "Abendstimmung: Lichter der Einkaufsstraße, privater Rückzugsort mitten im Leben",
+        "Hochwertiges Interieur: Klares, modernes Design mit warmen Materialien und stilvollen Akzenten",
+        "Zentrale Lage: Restaurants, Cafés und Shopping direkt vor der Tür — alles fußläufig erreichbar",
+        "Business & City-Trips: Schnelles WLAN, ruhiger Arbeitsbereich und perfekte ÖPNV-Anbindung"
+      ],
+      "distances": [
+        { "label": "Einkaufsstraße", "time": "4 Min" },
+        { "label": "Hauptbahnhof", "time": "6 Min" },
+        { "label": "Altstadt", "time": "8 Min" },
+        { "label": "Restaurants & Cafés", "time": "3 Min" }
+      ],
+      "extras": [
+        "Digitale Gästemappe: Empfehlungen, Parkplätze/Anreise, Technik & Hausordnung"
+      ]
+    }
+  ]
+}

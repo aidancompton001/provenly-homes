@@ -1,0 +1,26 @@
+{
+  "company": "Provenly Homes",
+  "owner": "Stanislaw Beim",
+  "address": "Nathan-Kahn-Str. 15, 51061 Köln",
+  "phone": "+49 163 4555833",
+  "emailDisplay": "info@provenlyhomes.de",
+  "emailCanonical": "provenlyhomes@web.de",
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "linkedin": ""
+  },
+  "navigation": [
+    { "label": "Leistungen", "href": "/leistungen" },
+    { "label": "Preise", "href": "/preise" },
+    { "label": "Signature Collection", "href": "/signatures" },
+    { "label": "Ratgeber", "href": "/ratgeber" },
+    { "label": "Kontakt", "href": "/kontakt" }
+  ],
+  "footer": {
+    "address": "Nathan-Kahn-Str. 15, 51061 Köln",
+    "email": "info@provenlyhomes.de",
+    "phone": "0163-4555833",
+    "copyright": "© 2026 Provenly Homes. Alle Rechte vorbehalten."
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "heading": "Was wir für Sie übernehmen.",
+  "subheading": "Damit Ihre Immobilie zuverlässig funktioniert – ohne dass Sie sich darum kümmern müssen.",
+  "services": [
+    {
+      "id": "betrieb-organisation",
+      "title": "Betrieb & Organisation",
+      "description": "Wir übernehmen den vollständigen Betrieb Ihrer Immobilie - strukturiert, zuverlässig und im Hintergrund gesteuert.",
+      "icon": "building"
+    },
+    {
+      "id": "gaeste-kommunikation",
+      "title": "Gäste & Kommunikation",
+      "description": "Von der ersten Anfrage bis zur Bewertung: Wir betreuen Ihre Gäste professionell und sorgen für reibungslose Abläufe.",
+      "icon": "message-circle"
+    },
+    {
+      "id": "reinigung-uebergaben",
+      "title": "Reinigung & Übergaben",
+      "description": "Reinigung, Wäsche und Übergaben werden zuverlässig gesteuert – für konstant hohe Standards bei jedem Aufenthalt.",
+      "icon": "sparkles"
+    },
+    {
+      "id": "preissteuerung-auslastung",
+      "title": "Preissteuerung & Auslastung",
+      "description": "Preise werden datenbasiert angepasst und kontinuierlich optimiert – mit Blick auf Auslastung und Ertrag.",
+      "icon": "trending-up"
+    },
+    {
+      "id": "zustand-instandhaltung",
+      "title": "Zustand & Instandhaltung",
+      "description": "Wir behalten den Zustand Ihrer Immobilie im Blick und koordinieren bei Bedarf Reparaturen und Maßnahmen.",
+      "icon": "wrench"
+    },
+    {
+      "id": "reporting-transparenz",
+      "title": "Reporting & Transparenz",
+      "description": "Sie sehen jederzeit, was passiert – mit klaren Auswertungen zu Belegung, Umsatz und Entwicklung.",
+      "icon": "bar-chart"
+    }
+  ],
+  "closing": "Erfolg in der Kurzzeitvermietung ist kein Zufall. Sondern das Ergebnis eines Systems."
+}

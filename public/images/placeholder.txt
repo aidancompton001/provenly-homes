@@ -1,0 +1,190 @@
+PROVENLY HOMES - Image Asset List
+===================================
+Generated: 2026-04-09
+Source: https://provenlyhomes.de (Framer-based site)
+
+NOTE: The original Framer site loads all images dynamically via JavaScript
+using their CDN (framerusercontent.com). These image URLs are not accessible
+via server-side fetching. The CEO or design team should provide original
+high-resolution source files for the rebuild.
+
+===================================
+HOMEPAGE IMAGES
+===================================
+
+1. LOGO
+   - Filename needed: logo.svg (or logo.png)
+   - Description: Provenly Homes brand logo (used in header navigation)
+
+2. HERO SECTION
+   - Filename needed: hero-main.jpg
+   - Description: Main hero image for "Kurzzeitvermietung, die wieder zu passivem Einkommen wird"
+   - Suggested: Professional property/lifestyle shot, luxury apartment interior or exterior
+
+3. DASHBOARD PREVIEW
+   - Filename needed: dashboard-preview.png
+   - Description: Dashboard mockup showing live occupancy, dynamic pricing logic, and operational control
+   - Section: "Dashboard Preview - Was unsere Arbeit sichtbar macht"
+
+4. COMPARISON SECTION
+   - Filename needed: comparison-chart.png (if graphical element exists)
+   - Description: Visual comparison table across Basis/Management/System levels
+
+5. SERVICE ICONS (6 total)
+   - Filename needed: icon-operations.svg
+     Description: "Betrieb & Organisation" - Property operation structuring
+   - Filename needed: icon-guests.svg
+     Description: "Gaste & Kommunikation" - Guest management
+   - Filename needed: icon-cleaning.svg
+     Description: "Reinigung & Ubergaben" - Cleaning and handover coordination
+   - Filename needed: icon-pricing.svg
+     Description: "Preissteuerung & Auslastung" - Data-driven pricing optimization
+   - Filename needed: icon-maintenance.svg
+     Description: "Zustand & Instandhaltung" - Condition monitoring and repairs
+   - Filename needed: icon-reporting.svg
+     Description: "Reporting & Transparenz" - Occupancy and revenue reporting
+
+6. PROCESS STEP ILLUSTRATIONS (3 total)
+   - Filename needed: step-1-consultation.jpg
+     Description: "Erstgesprach & Grundlagen" - Initial consultation visual
+   - Filename needed: step-2-strategy.jpg
+     Description: "Objektbegehung & individuelle Strategie" - On-site inspection visual
+   - Filename needed: step-3-optimization.jpg
+     Description: "Umsetzung, Steuerung & Optimierung" - Operations visual
+
+7. PRICING SECTION
+   - Filename needed: pricing-startvorteil.jpg (if visual element)
+     Description: "Provenly Homes Startvorteil" upgrade visual
+
+8. TESTIMONIAL SECTION
+   - Filename needed: testimonial-bg.jpg (if background image exists)
+   - Description: Background or decorative image for testimonials section
+
+9. SOCIAL MEDIA ICONS
+   - Filename needed: icon-social-*.svg
+   - Description: Social media platform icons in footer
+
+10. FAVICON
+    - Filename needed: favicon.ico / favicon.svg
+    - Description: Browser tab icon
+
+===================================
+SIGNATURE COLLECTION - PROPERTY CARDS (Homepage)
+===================================
+
+11. RHEINABEND SUITE - Card Thumbnail
+    - Filename needed: property-rheinabend-suite-card.jpg
+    - Description: Thumbnail for homepage card (62m2, 2 rooms, Rheinblick, Koln-Deutz)
+
+12. RHEINBLICK FAMILY RESIDENCE - Card Thumbnail
+    - Filename needed: property-rheinblick-family-card.jpg
+    - Description: Thumbnail for homepage card (104m2, 3 rooms, Garten, Koln-Lindenthal)
+
+13. URBAN SKYLINE LOFT - Card Thumbnail
+    - Filename needed: property-urban-skyline-card.jpg
+    - Description: Thumbnail for homepage card (68m2, 2 rooms, Stadtnahe, Koln-Bayenthal)
+
+===================================
+RHEINABEND SUITE - Detail Page
+/siganatures/rheinabend-suite
+===================================
+
+14. HERO IMAGE
+    - Filename needed: rheinabend-hero.jpg
+    - Description: Evening riverside view with apartment terrace, warm lighting
+
+15. INTERIOR GALLERY (estimate 4-6 images)
+    - Filename needed: rheinabend-interior-01.jpg
+      Description: Living room / main space with warm evening light
+    - Filename needed: rheinabend-interior-02.jpg
+      Description: Bedroom with modern furnishings
+    - Filename needed: rheinabend-interior-03.jpg
+      Description: Kitchen / dining area
+    - Filename needed: rheinabend-interior-04.jpg
+      Description: Bathroom
+    - Filename needed: rheinabend-interior-05.jpg
+      Description: Private terrace / balcony with Rhine view
+    - Filename needed: rheinabend-interior-06.jpg
+      Description: Detail shot (design elements, amenities)
+
+16. AMENITY ICONS
+    - Filename needed: amenity-wifi.svg
+    - Filename needed: amenity-parking.svg
+    - Filename needed: amenity-checkin.svg
+    - Description: Digital check-in, WLAN, parking icons
+
+===================================
+RHEINBLICK FAMILY RESIDENCE - Detail Page
+/siganatures/rheinblick-family-residence
+===================================
+
+17. HERO IMAGE
+    - Filename needed: rheinblick-hero.jpg
+    - Description: Spacious family apartment exterior or key interior view with Rhine panorama
+
+18. INTERIOR GALLERY (estimate 6-8 images)
+    - Filename needed: rheinblick-interior-01.jpg
+      Description: Main living area with natural lighting
+    - Filename needed: rheinblick-interior-02.jpg
+      Description: Master bedroom
+    - Filename needed: rheinblick-interior-03.jpg
+      Description: Second bedroom
+    - Filename needed: rheinblick-interior-04.jpg
+      Description: Third bedroom / children's room
+    - Filename needed: rheinblick-interior-05.jpg
+      Description: Kitchen
+    - Filename needed: rheinblick-interior-06.jpg
+      Description: Bathroom 1
+    - Filename needed: rheinblick-interior-07.jpg
+      Description: Bathroom 2
+    - Filename needed: rheinblick-interior-08.jpg
+      Description: Rooftop terrace with Rhine view
+    - Filename needed: rheinblick-interior-09.jpg
+      Description: Garden area
+
+===================================
+URBAN SKYLINE LOFT - Detail Page
+/siganatures/urban-skyline-loft
+===================================
+
+19. HERO IMAGE
+    - Filename needed: urban-skyline-hero.jpg
+    - Description: Modern loft with evening city/balcony view, shopping street lights
+
+20. INTERIOR GALLERY (estimate 4-6 images)
+    - Filename needed: urban-skyline-interior-01.jpg
+      Description: Open living space with modern design
+    - Filename needed: urban-skyline-interior-02.jpg
+      Description: Bedroom
+    - Filename needed: urban-skyline-interior-03.jpg
+      Description: Second bedroom / work area
+    - Filename needed: urban-skyline-interior-04.jpg
+      Description: Kitchen
+    - Filename needed: urban-skyline-interior-05.jpg
+      Description: Bathroom
+    - Filename needed: urban-skyline-interior-06.jpg
+      Description: Spacious balcony with city view
+
+===================================
+SHARED / REUSABLE ASSETS
+===================================
+
+21. OG:IMAGE (Open Graph)
+    - Filename needed: og-image.jpg
+    - Description: Social sharing preview image (1200x630px recommended)
+
+22. PATTERN / TEXTURE (if used)
+    - Filename needed: bg-pattern.svg
+    - Description: Any decorative background patterns used across the site
+
+===================================
+TOTAL ESTIMATED IMAGES: ~50-60 unique assets
+===================================
+
+PRIORITY for CEO to provide:
+  HIGH: Property photos (items 11-20) - these are unique and cannot be recreated
+  HIGH: Logo (item 1) - brand identity
+  HIGH: Dashboard screenshot (item 3) - product-specific
+  MEDIUM: Service/amenity icons (items 5, 16) - can be sourced from icon libraries
+  MEDIUM: Process illustrations (item 6) - can be designed
+  LOW: Social icons, favicon (items 9, 10) - can be generated from brand guidelines

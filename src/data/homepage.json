@@ -1,0 +1,99 @@
+{
+  "hero": {
+    "heading": "Kurzzeitvermietung, die wieder zu passivem Einkommen wird.",
+    "subheading": "Wir übernehmen Betrieb, Gäste, Zustand und Ertrag – professionell, automatisiert und mit voller Transparenz.",
+    "ctas": [
+      { "label": "Erstgespräch vereinbaren", "href": "/kontakt" },
+      { "label": "Objektrendite berechnen", "href": "/kontakt" }
+    ]
+  },
+  "vision": {
+    "heading": "Alles beginnt mit einer Idee. Doch…",
+    "body": "Zwei Apartments. Gleiche Lage. Und trotzdem ein völlig anderes Ergebnis. Was Gäste erleben, wirkt mühelos. Was dafür nötig ist, bleibt unsichtbar.",
+    "subheading": "Der Unterschied ist kein Zufall.",
+    "stats": [
+      { "value": "10+", "label": "Jahre Erfahrung aus klassischer Miet- & WEG-Verwaltung" },
+      { "value": "35%", "label": "Umsatzsteigerung durch professionelle Steuerung" },
+      { "value": "500+", "label": "zufriedene Gäste laut Bewertungen & Rückmeldungen" }
+    ]
+  },
+  "system": {
+    "heading": "System",
+    "body": "Provenly Homes ist kein Coaching, kein Kurs und kein Experiment. Sondern ein System, das Ihre Immobilie so führt, wie es ein Eigentümer selbst tun würde – nur noch besser."
+  },
+  "comparison": {
+    "heading": "Kurzzeitvermietung im Vergleich",
+    "subheading": "Gedacht wie ein Eigentümer. Geführt wie ein Unternehmen.",
+    "columns": ["Kategorie", "Private Anbieter", "Lokale Agenturen", "Provenly Homes"],
+    "rows": [
+      {
+        "category": "Inserat & Plattformpräsenz",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Gästekommunikation, Reinigung & Übergabe",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Management, Automatisierte Prozesse",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Dynamische Preissteuerung, Gastgeberstandards",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Immobilienexpertise",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Schaden- & Versicherungsmanagement",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      },
+      {
+        "category": "Wertsteigerung & Zukunftsperspektive",
+        "private": "?",
+        "agency": "?",
+        "provenly": "✓"
+      }
+    ]
+  },
+  "dashboard": {
+    "heading": "Dashboard Preview – Was unsere Arbeit sichtbar macht.",
+    "subheading": "Transparenz, Kontrolle und Optimierung – in einem System. Sie behalten jederzeit den Überblick. Wir übernehmen die operative Arbeit im Hintergrund.",
+    "description": "Live-Belegung, dynamische Preislogik und operative Steuerung – in Echtzeit."
+  },
+  "process": {
+    "heading": "Der Prozess – in 3 klaren Schritten",
+    "subheading": "Vom ersten Gespräch bis zum sichtbaren Ergebnis Ihrer Immobilien",
+    "steps": [
+      {
+        "number": 1,
+        "title": "Erstgespräch & Grundlagen",
+        "description": "Im ersten Schritt lernen wir Sie, Ihre Ziele und Ihre Immobilie kennen. Wir erfassen die relevanten Eckdaten, klären offene Fragen und legen den Rahmen der Zusammenarbeit fest. Auf dieser Basis erstellen wir eine erste Objekt- und Marktanalyse, die als inhaltliche Vorbereitung für die Objektbegehung dient."
+      },
+      {
+        "number": 2,
+        "title": "Objektbegehung & individuelle Strategie",
+        "description": "Bei der Objektbegehung prüfen wir das Objekt im Detail und gleichen die bisherigen Erkenntnisse mit der tatsächlichen Situation vor Ort ab. Potenziale, Einschränkungen und operative Anforderungen werden konkret eingeordnet. Darauf aufbauend entwickeln wir eine individuelle Strategie für Auslastung, Preisstruktur und Gästeerlebnis, die anschließend zur Abstimmung vorgelegt wird."
+      },
+      {
+        "number": 3,
+        "title": "Umsetzung, Steuerung & Optimierung",
+        "description": "Nach Freigabe der Strategie übernehmen wir die vollständige Umsetzung. Angebot, Inhalte, Technik und Prozesse werden vorbereitet und auf Provenly-Niveau gebracht. Im laufenden Betrieb steuern und optimieren wir Auslastung, Preise und Abläufe kontinuierlich. Sie behalten Transparenz – die operative Verantwortung liegt bei uns."
+      }
+    ]
+  }
+}

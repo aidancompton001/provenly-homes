@@ -1,0 +1,48 @@
+{
+  "heading": "Warum sich Eigentümer für Provenly Homes entscheiden.",
+  "intro": "Erste Rückmeldungen aus Gesprächen, Pilotprojekten und der täglichen Praxis.",
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "profile": "Eigentümer · 2-Zimmer-Wohnung",
+      "location": "Köln",
+      "goal": "Entlastung bei voller Kontrolle",
+      "result": "Planbare Einnahmen, kein operativer Aufwand"
+    },
+    {
+      "id": "testimonial-2",
+      "profile": "Eigentümer · Apartment",
+      "location": "Bonn",
+      "goal": "Professionelle Kurzzeitstrategie",
+      "result": "Klare Struktur, transparente Abläufe"
+    },
+    {
+      "id": "testimonial-3",
+      "profile": "Eigentümer · 3-Zimmer-Wohnung",
+      "location": "Köln",
+      "goal": "Höhere Auslastung",
+      "result": "Dynamische Preisstrategie, messbares Wachstum"
+    },
+    {
+      "id": "testimonial-4",
+      "profile": "Eigentümer · Kapitalanlage",
+      "location": "Rhein-Erft-Kreis",
+      "goal": "Sicherheit im Betrieb",
+      "result": "Standardisierte Prozesse, weniger Risiko"
+    },
+    {
+      "id": "testimonial-5",
+      "profile": "Eigentümer · Business-Apartment",
+      "location": "Düsseldorf",
+      "goal": "Weniger Abstimmung, mehr Klarheit",
+      "result": "Ein Ansprechpartner, saubere Umsetzung"
+    },
+    {
+      "id": "testimonial-6",
+      "profile": "Eigentümer · Bestandsimmobilie",
+      "location": "Köln",
+      "goal": "Modernisierung ohne Eigenaufwand",
+      "result": "Koordination, Umsetzung, laufende Optimierung"
+    }
+  ]
+}
