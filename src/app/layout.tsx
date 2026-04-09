@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Inter } from "next/font/google";
+import { Lora, Plus_Jakarta_Sans } from "next/font/google";
 import MotionProvider from "@/components/motion/MotionProvider";
 import "./globals.css";
 
-const serifFont = DM_Serif_Display({
+const lora = Lora({
   variable: "--font-heading",
-  subsets: ["latin"],
-  weight: "400",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
-const sansFont = Inter({
+const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-body",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
@@ -31,9 +32,9 @@ export default function RootLayout({
   return (
     <html
       lang="de"
-      className={`${serifFont.variable} ${sansFont.variable} h-full antialiased`}
+      className={`${lora.variable} ${plusJakarta.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body">
+      <body className="min-h-full flex flex-col">
         <a href="#main-content" className="skip-link">
           Zum Inhalt springen
         </a>

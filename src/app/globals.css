@@ -1,38 +1,44 @@
 @import "tailwindcss";
 
 :root {
-  /* Placeholder tokens — replaced in Phase 4 after CEO Luma branding */
-  --color-primary: #1a1a2e;
-  --color-secondary: #16213e;
-  --color-accent: #c9a96e;
-  --color-bg: #f5f0eb;
-  --color-bg-dark: #1a1a2e;
-  --color-text: #1a1a2e;
-  --color-text-light: #6b7280;
-  --color-text-on-dark: #f5f0eb;
+  /* Brand Colors — Variant 2: Warm Sand + Copper */
+  --color-cream: #F5EDE3;
+  --color-cream-dark: #EDE3D5;
+  --color-charcoal: #3A3A3A;
+  --color-charcoal-light: #5A5A5A;
+  --color-copper: #B87333;
+  --color-copper-light: #D4955A;
+  --color-copper-dark: #8B5A24;
+  --color-sand: #B8A48E;
 }
 
 @theme inline {
-  --color-primary: var(--color-primary);
-  --color-secondary: var(--color-secondary);
-  --color-accent: var(--color-accent);
-  --color-bg: var(--color-bg);
-  --color-bg-dark: var(--color-bg-dark);
-  --color-text: var(--color-text);
-  --color-text-light: var(--color-text-light);
-  --color-text-on-dark: var(--color-text-on-dark);
+  --color-cream: #F5EDE3;
+  --color-cream-dark: #EDE3D5;
+  --color-charcoal: #3A3A3A;
+  --color-charcoal-light: #5A5A5A;
+  --color-copper: #B87333;
+  --color-copper-light: #D4955A;
+  --color-copper-dark: #8B5A24;
+  --color-sand: #B8A48E;
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 }
 
+/* Base styles */
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
+  background: var(--color-cream);
+  color: var(--color-charcoal);
   font-family: var(--font-body), system-ui, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading), serif;
+  font-family: var(--font-heading), Georgia, serif;
+  line-height: 1.2;
+}
+
+p, li, td, th {
+  line-height: 1.6;
 }
 
 /* Skip link — visible only on focus (Tab) */
@@ -43,10 +49,11 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
   z-index: 9999;
   padding: 0.75rem 1.5rem;
-  background: var(--color-primary);
-  color: var(--color-text-on-dark);
+  background: var(--color-charcoal);
+  color: var(--color-cream);
   border-radius: 0 0 0.5rem 0.5rem;
   font-weight: 600;
+  font-family: var(--font-body), system-ui, sans-serif;
   transition: top 0.2s;
 }
 
@@ -54,10 +61,16 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
 }
 
-/* Focus visible ring */
+/* Focus visible ring — copper accent */
 *:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-copper);
   outline-offset: 2px;
+}
+
+/* Selection */
+::selection {
+  background: var(--color-copper);
+  color: white;
 }
 
 /* Reduced motion */
@@ -70,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Smooth scroll (Lenis handles this via JS, but fallback) */
+/* Lenis smooth scroll */
 html.lenis, html.lenis body {
   height: auto;
 }
@@ -81,4 +94,21 @@ html.lenis, html.lenis body {
 
 .lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
+}
+
+/* Dark section utility */
+.section-dark {
+  background: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4 {
+  color: var(--color-cream);
+}
+
+.section-dark a {
+  color: var(--color-copper);
 }
