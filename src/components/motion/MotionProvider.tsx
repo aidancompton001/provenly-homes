@@ -10,6 +10,10 @@ import {
 } from "react";
 import { usePathname } from "next/navigation";
 import Lenis from "lenis";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 interface MotionContextValue {
   reducedMotion: boolean;
@@ -54,7 +58,7 @@ export default function MotionProvider({ children }: MotionProviderProps) {
   const lenisRef = useRef<Lenis | null>(null);
   const pathname = usePathname();
 
-  // Initialize / destroy Lenis based on reduced motion
+  // Initialize / destroy Lenis + wire GSAP ScrollTrigger
   useEffect(() => {
     if (reducedMotion) {
       lenisRef.current?.destroy();
@@ -70,15 +74,20 @@ export default function MotionProvider({ children }: MotionProviderProps) {
 
     lenisRef.current = lenisInstance;
 
-    let animationId: number;
-    function raf(time: number) {
-      lenisInstance.raf(time);
-      animationId = requestAnimationFrame(raf);
-    }
-    animationId = requestAnimationFrame(raf);
+    // Wire Lenis scroll events to ScrollTrigger so GSAP animations
+    // respond correctly to Lenis smooth scroll position
+    lenisInstance.on("scroll", ScrollTrigger.update);
+
+    // Let GSAP ticker drive Lenis raf instead of requestAnimationFrame
+    // This keeps both systems in perfect sync on the same frame loop
+    gsap.ticker.add((time) => {
+      lenisInstance.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
 
     return () => {
-      cancelAnimationFrame(animationId);
+      // Remove the Lenis raf callback from GSAP ticker
+      gsap.ticker.remove(lenisInstance.raf as unknown as gsap.TickerCallback);
       lenisInstance.destroy();
       lenisRef.current = null;
     };

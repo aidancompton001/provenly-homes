@@ -1,6 +1,9 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import CookieBanner from "@/components/layout/CookieBanner";
+import FloatingContacts from "@/components/layout/FloatingContacts";
 import Hero from "@/components/sections/Hero";
+import Stats from "@/components/sections/Stats";
 import Comparison from "@/components/sections/Comparison";
 import Services from "@/components/sections/Services";
 import Signatures from "@/components/sections/Signatures";
@@ -9,7 +12,6 @@ import Pricing from "@/components/sections/Pricing";
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTASection from "@/components/sections/CTASection";
-import Stats from "@/components/sections/Stats";
 
 export default function Home() {
   return (
@@ -17,6 +19,7 @@ export default function Home() {
       <Header />
       <main id="main-content">
         <Hero />
+        <Stats />
         <Comparison />
         <Services />
         <Signatures />
@@ -25,9 +28,10 @@ export default function Home() {
         <Testimonials />
         <FAQ />
         <CTASection />
-        <Stats />
       </main>
       <Footer />
+      <CookieBanner />
+      <FloatingContacts />
     </>
   );
 }
