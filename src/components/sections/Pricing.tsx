@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "motion/react";
@@ -10,6 +10,7 @@ import { useMotion } from "@/components/motion/MotionProvider";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import { MOTION_HOVER_DURATION } from "@/lib/animations";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,15 +27,7 @@ function CheckIcon() {
 export default function Pricing() {
   const gridRef = useRef<HTMLDivElement>(null);
   const { reducedMotion } = useMotion();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
+  const isMobile = useIsMobile();
 
   // DM line 186: cards stagger + DM line 190: feature stagger
   useEffect(() => {

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { MOTION_PAGE_EASE } from "@/lib/animations";
+import { useIsMobile } from "@/hooks/useIsMobile";
 import testimonialsData from "@/data/testimonials.json";
 import type { TestimonialsData } from "@/data/types";
 import Container from "@/components/ui/Container";
@@ -14,19 +14,10 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [paused, setPaused] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const isMobile = useIsMobile();
 
   const total = data.testimonials.length;
-
-  // DM line 210: detect mobile for auto-advance control
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
 
   const goTo = useCallback(
     (index: number) => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -10,6 +10,7 @@ import { useMotion } from "@/components/motion/MotionProvider";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import { getImageUrl } from "@/lib/getImageUrl";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -23,16 +24,7 @@ export default function Hero() {
   const ctaRef = useRef<HTMLDivElement>(null);
   const spotlightRef = useRef<HTMLDivElement>(null);
   const { reducedMotion } = useMotion();
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Detect mobile for animation branching (DM line 106)
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
+  const isMobile = useIsMobile();
 
   // Spotlight cursor effect (DM line 105)
   useEffect(() => {

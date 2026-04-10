@@ -11,6 +11,7 @@ import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
 import ScrollReveal from "@/components/motion/ScrollReveal";
 import { getImageUrl, getHref } from "@/lib/getImageUrl";
+import { useIsMobile } from "@/hooks/useIsMobile";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,15 +26,7 @@ const propertyImages: Record<string, string> = {
 export default function Signatures() {
   const gridRef = useRef<HTMLDivElement>(null);
   const { reducedMotion } = useMotion();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
+  const isMobile = useIsMobile();
 
   // DM line 152: cards GSAP stagger + DM line 153: image parallax
   useEffect(() => {
