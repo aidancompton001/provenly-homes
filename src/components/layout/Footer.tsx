@@ -1,6 +1,7 @@
 import Link from "next/link";
 import siteData from "@/data/site.json";
 import type { SiteConfig } from "@/data/types";
+import { getImageUrl, getHref } from "@/lib/getImageUrl";
 import Container from "@/components/ui/Container";
 
 const site = siteData as SiteConfig;
@@ -19,7 +20,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" aria-label={site.company}>
               <img
-                src="/images/logo-full-dark.svg"
+                src={getImageUrl("/images/logo-full-dark.svg")}
                 alt={site.company}
                 className="h-8 w-auto mb-6"
               />
@@ -39,7 +40,7 @@ export default function Footer() {
                 {site.navigation.map((item) => (
                   <li key={item.href}>
                     <a
-                      href={item.href}
+                      href={getHref(item.href)}
                       className="font-body text-sm text-cream/80 hover:text-copper transition-colors duration-200"
                     >
                       {item.label}
@@ -89,7 +90,7 @@ export default function Footer() {
               {legalLinks.map((link) => (
                 <li key={link.href}>
                   <a
-                    href={link.href}
+                    href={getHref(link.href)}
                     className="font-body text-sm text-cream/80 hover:text-copper transition-colors duration-200"
                   >
                     {link.label}

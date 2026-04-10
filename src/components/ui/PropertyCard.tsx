@@ -1,5 +1,5 @@
 import type { Property } from "@/data/types";
-import { getImageUrl } from "@/lib/getImageUrl";
+import { getImageUrl, getHref } from "@/lib/getImageUrl";
 import Badge from "./Badge";
 
 const propertyImages: Record<string, string> = {
@@ -27,7 +27,7 @@ export default function PropertyCard({
 }: PropertyCardProps) {
   return (
     <a
-      href={`/objekte/${slug}`}
+      href={getHref(`/objekte/${slug}`)}
       className={[
         "group block bg-cream rounded-xl shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_8px_24px_rgba(58,58,58,0.12)] transition-all duration-300 overflow-hidden cursor-pointer",
         className,

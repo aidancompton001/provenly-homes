@@ -1,4 +1,13 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export function getImageUrl(path: string): string {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  return `${basePath}${path}`;
+}
+
+export function getHref(path: string): string {
+  if (path.startsWith("http")) return path;
+  // /#services → /provenly-homes/#services
+  if (path.startsWith("/#")) return `${basePath}/${path.slice(1)}`;
+  // /objekte → /provenly-homes/objekte
   return `${basePath}${path}`;
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { getHref } from "@/lib/getImageUrl";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Container from "@/components/ui/Container";
@@ -31,7 +32,7 @@ export default function RatgeberPage() {
               {articlesData.articles.map((article) => (
                 <Link
                   key={article.slug}
-                  href={`/ratgeber/${article.slug}`}
+                  href={getHref(`/ratgeber/${article.slug}`)}
                   className="group block bg-cream rounded-xl shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_8px_24px_rgba(58,58,58,0.12)] transition-all duration-300 overflow-hidden border border-sand cursor-pointer"
                 >
                   <div className="p-6">

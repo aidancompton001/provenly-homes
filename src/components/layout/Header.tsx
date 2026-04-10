@@ -5,6 +5,7 @@ import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
 import siteData from "@/data/site.json";
 import type { SiteConfig } from "@/data/types";
+import { getImageUrl, getHref } from "@/lib/getImageUrl";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 
@@ -94,7 +95,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="shrink-0" aria-label={site.company}>
             <img
-              src="/images/logo-full.svg"
+              src={getImageUrl("/images/logo-full.svg")}
               alt={site.company}
               className="h-8 lg:h-10 w-auto"
             />
@@ -105,7 +106,7 @@ export default function Header() {
             {site.navigation.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={getHref(item.href)}
                 className={[
                   "font-body text-base font-medium transition-colors duration-200",
                   scrolled
@@ -173,7 +174,7 @@ export default function Header() {
                 {site.navigation.map((item) => (
                   <motion.a
                     key={item.href}
-                    href={item.href}
+                    href={getHref(item.href)}
                     onClick={closeMenu}
                     className="font-heading text-2xl text-cream hover:text-copper transition-colors duration-200"
                     variants={{

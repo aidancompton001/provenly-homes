@@ -1,6 +1,7 @@
 "use client";
 
 import { type ComponentPropsWithoutRef, type ReactNode } from "react";
+import { getHref } from "@/lib/getImageUrl";
 
 type ButtonVariant = "primary" | "secondary" | "ghost" | "primary-dark";
 type ButtonSize = "sm" | "md" | "lg";
@@ -60,7 +61,7 @@ export default function Button({
   if ("href" in rest && rest.href) {
     const { href, ...anchorProps } = rest as ButtonAsLink;
     return (
-      <a href={href} className={classes} {...anchorProps}>
+      <a href={getHref(href)} className={classes} {...anchorProps}>
         {children}
       </a>
     );
