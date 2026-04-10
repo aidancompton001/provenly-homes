@@ -44,7 +44,7 @@ export function AccordionItem({ question, answer, isOpen, onToggle }: AccordionI
   };
 
   return (
-    <div className="border-b border-sand">
+    <div data-faq-item className={["border-b border-sand transition-all duration-200", isOpen ? "border-l-2 border-l-copper pl-4" : ""].join(" ")}>
       <button
         type="button"
         onClick={onToggle}

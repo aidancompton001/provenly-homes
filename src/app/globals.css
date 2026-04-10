@@ -96,6 +96,52 @@ html.lenis, html.lenis body {
   overscroll-behavior: contain;
 }
 
+/* DM line 324: Label float on focus — CSS transition */
+.form-input-wrapper label {
+  transition: transform 200ms ease, font-size 200ms ease;
+}
+
+/* Moving Border button (DM line 258: Aceternity Moving Border pattern) */
+.moving-border-btn::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 10px;
+  background: conic-gradient(from var(--border-angle, 0deg), transparent 60%, var(--color-copper) 80%, transparent 100%);
+  animation: moving-border-rotate 3s linear infinite;
+  z-index: 0;
+}
+
+.moving-border-btn::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 8px;
+  background: var(--color-copper);
+  z-index: 0;
+  transition: background 200ms;
+}
+
+.moving-border-btn:hover::after {
+  background: var(--color-copper-light);
+}
+
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes moving-border-rotate {
+  to { --border-angle: 360deg; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moving-border-btn::before {
+    animation: none;
+  }
+}
+
 /* Dark section utility */
 .section-dark {
   background: var(--color-charcoal);

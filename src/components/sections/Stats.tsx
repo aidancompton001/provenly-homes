@@ -30,6 +30,10 @@ export default function Stats() {
     const el = sectionRef.current;
     if (!el) return;
 
+    // DM line 243: mobile duration 1.5, desktop 2
+    const mobile = window.matchMedia("(max-width: 768px)").matches;
+    const counterDuration = mobile ? 1.5 : 2;
+
     const ctx = gsap.context(() => {
       const items = el.querySelectorAll(".stat-item");
       const numbers = el.querySelectorAll(".stat-number");
@@ -51,7 +55,7 @@ export default function Stats() {
       numbers.forEach((numEl) => {
         gsap.from(numEl, {
           textContent: 0,
-          duration: 1.5,
+          duration: counterDuration,
           ease: "power1.out",
           snap: { textContent: 1 },
           scrollTrigger: {
@@ -65,12 +69,13 @@ export default function Stats() {
         });
       });
 
+      // DM line 241: suffix delay = after counter (2s desktop)
       gsap.from(suffixes, {
         opacity: 0,
         scale: 0.5,
         duration: 0.3,
         ease: "back.out(1.7)",
-        delay: 1.5,
+        delay: counterDuration,
         scrollTrigger: {
           trigger: el,
           start: "top 70%",

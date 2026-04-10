@@ -1,17 +1,17 @@
 "use client";
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
 import homepageData from "@/data/homepage.json";
 import type { HomepageData } from "@/data/types";
 import { useMotion } from "@/components/motion/MotionProvider";
-import { useSplitText } from "@/hooks/useSplitText";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
 import { getImageUrl } from "@/lib/getImageUrl";
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const data = homepageData as HomepageData;
 const { hero } = data;
@@ -21,34 +21,98 @@ export default function Hero() {
   const headingRef = useRef<HTMLHeadingElement>(null);
   const subRef = useRef<HTMLParagraphElement>(null);
   const ctaRef = useRef<HTMLDivElement>(null);
+  const spotlightRef = useRef<HTMLDivElement>(null);
   const { reducedMotion } = useMotion();
+  const [isMobile, setIsMobile] = useState(false);
 
-  // SplitText char reveal on heading
-  useSplitText(headingRef, {
-    type: "chars",
-    stagger: 0.03,
-    duration: 0.8,
-    yPercent: 100,
-    ease: "power2.out",
-    delay: 0.5,
-  });
+  // Detect mobile for animation branching (DM line 106)
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  // Spotlight cursor effect (DM line 105)
+  useEffect(() => {
+    if (reducedMotion || isMobile) return;
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = section.getBoundingClientRect();
+      section.style.setProperty("--mouse-x", `${e.clientX - rect.left}px`);
+      section.style.setProperty("--mouse-y", `${e.clientY - rect.top}px`);
+    };
+    section.addEventListener("mousemove", handleMouseMove);
+    return () => section.removeEventListener("mousemove", handleMouseMove);
+  }, [reducedMotion, isMobile]);
 
   useEffect(() => {
-    if (reducedMotion) return;
+    if (reducedMotion) {
+      // Show everything immediately
+      if (headingRef.current) gsap.set(headingRef.current, { opacity: 1 });
+      if (subRef.current) gsap.set(subRef.current, { opacity: 1 });
+      if (ctaRef.current) gsap.set(ctaRef.current, { opacity: 1 });
+      return;
+    }
 
     const ctx = gsap.context(() => {
-      // Subheading fade in
-      if (subRef.current) {
-        gsap.from(subRef.current, {
-          opacity: 0,
-          y: 30,
-          duration: 0.6,
-          ease: "power2.out",
-          delay: 1.2,
-        });
+      // === HEADING ===
+      if (headingRef.current) {
+        if (isMobile) {
+          // Mobile: whole block fade, NO SplitText (DM line 106: "chars too small")
+          gsap.from(headingRef.current, {
+            opacity: 0,
+            y: 40,
+            duration: 0.8,
+            ease: "power2.out",
+            delay: 0.5,
+          });
+          gsap.set(headingRef.current, { opacity: 1 });
+        } else {
+          // Desktop: SplitText char reveal (DM line 101)
+          const split = SplitText.create(headingRef.current, { type: "chars" });
+          gsap.set(headingRef.current, { opacity: 1 });
+          gsap.from(split.chars, {
+            yPercent: 150, // DM: 150 not 100
+            opacity: 0,
+            stagger: 0.03,
+            duration: 0.8,
+            ease: "power3.out", // DM: power3 not power2
+            delay: 0.5,
+          });
+        }
       }
 
-      // CTAs fade in
+      // === SUBHEADING: Text Generate Effect (DM line 102) ===
+      if (subRef.current) {
+        if (isMobile) {
+          // Mobile: simple fade
+          gsap.from(subRef.current, {
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            ease: "power2.out",
+            delay: 1.0,
+          });
+        } else {
+          // Desktop: word-by-word fade (Aceternity Text Generate Effect)
+          const splitSub = SplitText.create(subRef.current, { type: "words" });
+          gsap.set(subRef.current, { opacity: 1 });
+          gsap.from(splitSub.words, {
+            opacity: 0,
+            y: 20,
+            stagger: 0.04,
+            duration: 0.6,
+            ease: "power2.out",
+            delay: 1.2,
+          });
+        }
+      }
+
+      // === CTAs ===
       if (ctaRef.current) {
         gsap.from(ctaRef.current, {
           opacity: 0,
@@ -59,8 +123,8 @@ export default function Hero() {
         });
       }
 
-      // Parallax fade on scroll
-      if (sectionRef.current) {
+      // === Parallax fade on scroll (DM line 104) — desktop only ===
+      if (sectionRef.current && !isMobile) {
         const content = sectionRef.current.querySelector(".hero-content");
         if (content) {
           gsap.to(content, {
@@ -79,7 +143,7 @@ export default function Hero() {
     }, sectionRef);
 
     return () => ctx.revert();
-  }, [reducedMotion]);
+  }, [reducedMotion, isMobile]);
 
   return (
     <section
@@ -100,6 +164,18 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/80" />
       </div>
 
+      {/* Spotlight cursor effect (DM line 105) — desktop only */}
+      {!isMobile && !reducedMotion && (
+        <div
+          ref={spotlightRef}
+          className="absolute inset-0 pointer-events-none z-[1]"
+          style={{
+            background: "radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(184,115,51,0.06), transparent 40%)",
+          }}
+          aria-hidden="true"
+        />
+      )}
+
       <Container className="hero-content relative z-10 py-24 lg:py-0">
         <div className="max-w-3xl mx-auto text-center">
           <h1
@@ -111,7 +187,7 @@ export default function Hero() {
 
           <p
             ref={subRef}
-            className="mt-6 font-body text-lg lg:text-xl text-cream/80 leading-relaxed max-w-2xl mx-auto"
+            className="mt-6 font-body text-lg lg:text-xl text-cream/80 leading-relaxed max-w-2xl mx-auto opacity-0"
           >
             {hero.subheading}
           </p>

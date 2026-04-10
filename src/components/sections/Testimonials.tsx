@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { MOTION_PAGE_EASE } from "@/lib/animations";
 import testimonialsData from "@/data/testimonials.json";
 import type { TestimonialsData } from "@/data/types";
 import Container from "@/components/ui/Container";
@@ -13,9 +14,19 @@ export default function Testimonials() {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [paused, setPaused] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const total = data.testimonials.length;
+
+  // DM line 210: detect mobile for auto-advance control
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   const goTo = useCallback(
     (index: number) => {
@@ -30,14 +41,19 @@ export default function Testimonials() {
     setCurrent((prev) => (prev + 1) % total);
   }, [total]);
 
-  // Auto-play
+  const prev = useCallback(() => {
+    setDirection(-1);
+    setCurrent((prev) => (prev - 1 + total) % total);
+  }, [total]);
+
+  // Auto-play — DM line 210: NO auto-advance on mobile
   useEffect(() => {
-    if (paused) return;
+    if (paused || isMobile) return;
     intervalRef.current = setInterval(next, 6000);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [paused, next]);
+  }, [paused, next, isMobile]);
 
   const testimonial = data.testimonials[current];
 
@@ -118,8 +134,21 @@ export default function Testimonials() {
           </AnimatePresence>
         </div>
 
-        {/* Dots navigation */}
-        <div className="flex items-center justify-center gap-1 mt-8">
+        {/* DM line 209: Navigation arrows */}
+        <div className="flex items-center justify-center gap-4 mt-8">
+          <button
+            type="button"
+            onClick={prev}
+            className="p-2 text-charcoal-light hover:text-copper transition-opacity duration-150 cursor-pointer"
+            aria-label="Vorheriges Testimonial"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M12.5 15L7.5 10L12.5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+
+          {/* Dots */}
+          <div className="flex items-center gap-1">
           {data.testimonials.map((t, i) => (
             <button
               key={t.id}
@@ -136,6 +165,18 @@ export default function Testimonials() {
               />
             </button>
           ))}
+          </div>
+
+          <button
+            type="button"
+            onClick={next}
+            className="p-2 text-charcoal-light hover:text-copper transition-opacity duration-150 cursor-pointer"
+            aria-label="Nächstes Testimonial"
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M7.5 5L12.5 10L7.5 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
         </div>
       </Container>
     </section>

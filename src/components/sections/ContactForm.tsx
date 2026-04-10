@@ -1,9 +1,15 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, useRef, useEffect, type FormEvent } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import contactData from "@/data/contact-form.json";
 import type { ContactFormData, ContactFormField, ContactFormSection } from "@/data/types";
 import { FORMSUBMIT_ACTION, FORMSUBMIT_CONFIG } from "@/lib/formsubmit";
+import { useMotion } from "@/components/motion/MotionProvider";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const data = contactData as ContactFormData;
 
@@ -137,7 +143,7 @@ function renderField(field: ContactFormField, sectionId: string) {
 
 function FormSection({ section }: { section: ContactFormSection }) {
   return (
-    <div className="space-y-5">
+    <div className="form-section space-y-5">
       <div>
         <h3 className="font-heading text-xl lg:text-2xl font-semibold text-charcoal">
           {section.title}
@@ -157,6 +163,35 @@ function FormSection({ section }: { section: ContactFormSection }) {
 
 export default function ContactForm() {
   const [state, setState] = useState<FormState>("idle");
+  const formRef = useRef<HTMLFormElement>(null);
+  const { reducedMotion } = useMotion();
+
+  // DM line 322: form sections stagger on scroll
+  useEffect(() => {
+    if (reducedMotion) return;
+    const form = formRef.current;
+    if (!form) return;
+
+    const ctx = gsap.context(() => {
+      const sections = form.querySelectorAll(".form-section");
+      if (sections.length > 0) {
+        gsap.from(sections, {
+          opacity: 0,
+          y: 30,
+          stagger: 0.15,
+          duration: 0.7,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: form,
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+        });
+      }
+    }, form);
+
+    return () => ctx.revert();
+  }, [reducedMotion]);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -219,6 +254,7 @@ export default function ContactForm() {
 
   return (
     <form
+      ref={formRef}
       onSubmit={handleSubmit}
       className="space-y-10"
       noValidate
@@ -242,14 +278,23 @@ export default function ContactForm() {
         <FormSection key={section.id} section={section} />
       ))}
 
-      {state === "error" && (
-        <div className="rounded-lg border border-red-300 bg-red-50 px-4 py-3">
-          <p className="font-body text-sm text-red-700">
-            Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es
-            erneut oder kontaktieren Sie uns direkt per E-Mail.
-          </p>
-        </div>
-      )}
+      {/* DM line 325: validation error Motion animation */}
+      <AnimatePresence>
+        {state === "error" && (
+          <motion.div
+            initial={{ opacity: 0, y: -5 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -5 }}
+            transition={{ duration: 0.2 }}
+            className="rounded-lg border border-red-300 bg-red-50 px-4 py-3"
+          >
+            <p className="font-body text-sm text-red-700">
+              Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es
+              erneut oder kontaktieren Sie uns direkt per E-Mail.
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div>
         <button
