@@ -49,10 +49,9 @@ export default function Stats() {
       });
 
       numbers.forEach((numEl) => {
-        const target = parseInt(numEl.getAttribute("data-value") || "0", 10);
         gsap.from(numEl, {
           textContent: 0,
-          duration: 2,
+          duration: 1.5,
           ease: "power1.out",
           snap: { textContent: 1 },
           scrollTrigger: {
@@ -71,7 +70,7 @@ export default function Stats() {
         scale: 0.5,
         duration: 0.3,
         ease: "back.out(1.7)",
-        delay: 2,
+        delay: 1.5,
         scrollTrigger: {
           trigger: el,
           start: "top 70%",

@@ -1,19 +1,45 @@
-img_01 — 2679641 bytes — https://framerusercontent.com/assets/9RToNUYeR88H8f3LMbsbv99DCo.png
-img_02 — 2358790 bytes — https://framerusercontent.com/assets/KiOMYQxfBuLu9N7Tblrpoh0f0nk.png
-img_07 — 323522 bytes — https://framerusercontent.com/images/70tYm7uMUWIqb4MSZfHlByXtI.png
-img_09 — 747382 bytes — https://framerusercontent.com/images/9RToNUYeR88H8f3LMbsbv99DCo.png
-img_11 — 197384 bytes — https://framerusercontent.com/images/HdUjz2B6K3cNZj0T7OjBChfZ6oQ.png
-img_12 — 66625 bytes — https://framerusercontent.com/images/IRANRfltKptwXyOM7a4Q2w3XcFs.png
-img_14 — 28584 bytes — https://framerusercontent.com/images/LBToqVosrL9gcq2xtCXnJIiWKE.png
-img_15 — 166393 bytes — https://framerusercontent.com/images/Mbp0nhw8LCXLB7K7hEHZM4JbkI.png
-img_17 — 173121 bytes — https://framerusercontent.com/images/T2Y1f97j7co0x43SldoNM9ipLs.png
-img_19 — 335027 bytes — https://framerusercontent.com/images/WTe40Uh91SYCffrKKZKbonMjLgU.png
-img_21 — 328098 bytes — https://framerusercontent.com/images/b7NvtzooOnuIuvyhUP086csYnQ.png
-img_22 — 33418 bytes — https://framerusercontent.com/images/cPElGOnV5CbhJeaOqxhLYxQ3BE.png
-img_23 — 175880 bytes — https://framerusercontent.com/images/fqqsXWmn7gtgMqz08hY5EWTF8Gs.png
-img_25 — 214485 bytes — https://framerusercontent.com/images/nMZBCuG0sPJ0mwlXjEiyydYU.png
-img_27 — 554661 bytes — https://framerusercontent.com/images/pW5LPfSq8cdCfy1Z01IZeHYK2g.png
-img_28 — 575079 bytes — https://framerusercontent.com/images/pt5KblhrzO0OfoDevvwa23xi8aI.png
-img_29 — 177038 bytes — https://framerusercontent.com/images/q7DITjFaccvD3Giedgn2YtcnMU0.png
-img_30 — 244643 bytes — https://framerusercontent.com/images/qQnAQx1VHlZGpR9RJ5dAOkMtkIo.png
-img_33 — 319575 bytes — https://framerusercontent.com/images/xtXVuB6Dwg6qlk0MoUgmkPXXgiI.png
+## Image Map — Provenly Homes (Phase 5.1)
+## Updated: 2026-04-10
+
+# Hero
+hero-bg.png — 1536x1024 — Main hero background
+hero-bg-alt.png — 1536x1024 — Hero alternative/fallback
+
+# Properties — Rheinabend Suite
+property-rheinabend-1.png — 1024x1410 — Card image (portrait)
+property-rheinabend-2.png — 618x528 — Interior detail
+property-rheinabend-3.png — 709x961 — Interior portrait
+property-rheinabend-hero.png — 1536x1024 — Detail page hero
+property-rheinabend-interior.png — 1536x954 — Interior wide
+
+# Properties — Rheinblick Family Residence
+property-rheinblick-1.png — 707x959 — Card image (portrait)
+property-rheinblick-2.png — 390x520 — Interior detail
+property-rheinblick-3.png — 1024x1413 — Interior portrait
+property-rheinblick-hero.png — 1536x1024 — Detail page hero
+
+# Properties — Urban Skyline Loft
+property-urban-1.png — 765x464 — Card image (landscape)
+property-urban-2.png — 1024x1418 — Interior portrait
+property-urban-3.png — 1024x1415 — Interior portrait
+property-urban-hero.png — 897x529 — Detail page hero
+property-urban-interior.png — 1536x1024 — Interior wide
+
+# General
+dashboard-preview.png — 3840x2160 — Dashboard preview section
+about-team.png — 878x491 — Team/about section
+testimonial-avatar.png — 476x244 — Testimonial decoration
+
+# Decorative
+decorative-arrow.svg — SVG — Decorative arrow element
+icon-small.png — 96x96 — Small icon
+
+# Logos (unchanged)
+logo-full.svg — Full logo light
+logo-full-dark.svg — Full logo dark
+logo-icon.svg — Icon light
+logo-icon-dark.svg — Icon dark
+logo-icon-mark.png — Icon mark PNG
+logo-primary-wordmark.png — Primary wordmark PNG
+logo-wordmark-dark.svg — Wordmark dark
+logo-wordmark.svg — Wordmark light

@@ -11,9 +11,9 @@
     "linkedin": ""
   },
   "navigation": [
-    { "label": "Leistungen", "href": "/leistungen" },
-    { "label": "Preise", "href": "/preise" },
-    { "label": "Signature Collection", "href": "/signatures" },
+    { "label": "Leistungen", "href": "/#services" },
+    { "label": "Preise", "href": "/#pricing" },
+    { "label": "Objekte", "href": "/objekte" },
     { "label": "Ratgeber", "href": "/ratgeber" },
     { "label": "Kontakt", "href": "/kontakt" }
   ],

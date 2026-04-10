@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 150" fill="none">
+  <!-- Key-in-Arch Icon Mark — Copper on transparent -->
+  <!-- Arch -->
+  <path d="M60 10C30.177 10 6 34.177 6 64v76h12V64c0-23.196 18.804-42 42-42s42 18.804 42 42v76h12V64c0-29.823-24.177-54-54-54z" fill="#B87333"/>
+  <!-- Key circle -->
+  <circle cx="60" cy="72" r="14" stroke="#B87333" stroke-width="6" fill="none"/>
+  <!-- Key shaft -->
+  <rect x="57" y="86" width="6" height="40" rx="3" fill="#B87333"/>
+  <!-- Key teeth -->
+  <rect x="63" y="108" width="10" height="5" rx="2" fill="#B87333"/>
+  <rect x="63" y="118" width="7" height="5" rx="2" fill="#B87333"/>
+</svg>

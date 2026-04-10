@@ -6,8 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import homepageData from "@/data/homepage.json";
 import type { HomepageData } from "@/data/types";
 import { useMotion } from "@/components/motion/MotionProvider";
+import { useSplitText } from "@/hooks/useSplitText";
 import Button from "@/components/ui/Button";
 import Container from "@/components/ui/Container";
+import { getImageUrl } from "@/lib/getImageUrl";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,40 +23,39 @@ export default function Hero() {
   const ctaRef = useRef<HTMLDivElement>(null);
   const { reducedMotion } = useMotion();
 
+  // SplitText char reveal on heading
+  useSplitText(headingRef, {
+    type: "chars",
+    stagger: 0.03,
+    duration: 0.8,
+    yPercent: 100,
+    ease: "power2.out",
+    delay: 0.5,
+  });
+
   useEffect(() => {
     if (reducedMotion) return;
 
     const ctx = gsap.context(() => {
-      // Heading animation
-      if (headingRef.current) {
-        gsap.from(headingRef.current, {
-          opacity: 0,
-          y: 60,
-          duration: 0.8,
-          ease: "power3.out",
-          delay: 0.5,
-        });
-      }
-
-      // Subheading animation
+      // Subheading fade in
       if (subRef.current) {
         gsap.from(subRef.current, {
           opacity: 0,
           y: 30,
           duration: 0.6,
           ease: "power2.out",
-          delay: 1.0,
+          delay: 1.2,
         });
       }
 
-      // CTAs animation
+      // CTAs fade in
       if (ctaRef.current) {
         gsap.from(ctaRef.current, {
           opacity: 0,
           y: 30,
           duration: 0.6,
           ease: "power2.out",
-          delay: 1.4,
+          delay: 1.6,
         });
       }
 
@@ -85,18 +86,32 @@ export default function Hero() {
       ref={sectionRef}
       className="relative min-h-screen flex items-center bg-charcoal overflow-hidden"
     >
+      {/* Background image with gradient overlay */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <img
+          src={getImageUrl("/images/hero-bg.png")}
+          alt=""
+          width={1536}
+          height={1024}
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/50 to-charcoal/80" />
+      </div>
+
       <Container className="hero-content relative z-10 py-24 lg:py-0">
         <div className="max-w-3xl mx-auto text-center">
           <h1
             ref={headingRef}
-            className="font-heading text-4xl md:text-5xl lg:text-[4rem] font-normal text-cream leading-[1.2]"
+            className="font-heading text-4xl md:text-5xl lg:text-[4rem] font-normal text-cream leading-[1.2] opacity-0"
           >
             {hero.heading}
           </h1>
 
           <p
             ref={subRef}
-            className="mt-6 font-body text-lg lg:text-xl text-sand leading-relaxed max-w-2xl mx-auto"
+            className="mt-6 font-body text-lg lg:text-xl text-cream/80 leading-relaxed max-w-2xl mx-auto"
           >
             {hero.subheading}
           </p>

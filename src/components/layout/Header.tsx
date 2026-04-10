@@ -86,7 +86,7 @@ export default function Header() {
         className={[
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
-            ? "bg-charcoal/85 backdrop-blur-md shadow-[0_2px_8px_rgba(58,58,58,0.12)]"
+            ? "bg-charcoal/90 backdrop-blur-xl shadow-[0_1px_3px_rgba(0,0,0,0.12)]"
             : "bg-transparent",
         ].join(" ")}
       >
@@ -110,7 +110,7 @@ export default function Header() {
                   "font-body text-base font-medium transition-colors duration-200",
                   scrolled
                     ? "text-cream hover:text-copper"
-                    : "text-charcoal hover:text-copper",
+                    : "text-cream/90 hover:text-copper",
                 ].join(" ")}
               >
                 {item.label}
@@ -121,7 +121,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button
-              variant={scrolled ? "primary-dark" : "primary"}
+              variant="primary-dark"
               size="sm"
               href="/kontakt"
             >
@@ -133,8 +133,8 @@ export default function Header() {
           <button
             type="button"
             className={[
-              "lg:hidden p-2 -mr-2 transition-colors duration-200",
-              scrolled ? "text-cream" : "text-charcoal",
+              "lg:hidden p-2.5 -mr-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center transition-colors duration-200",
+              scrolled ? "text-cream" : "text-cream/90",
             ].join(" ")}
             onClick={toggleMenu}
             aria-label={menuOpen ? "Menü schließen" : "Menü öffnen"}

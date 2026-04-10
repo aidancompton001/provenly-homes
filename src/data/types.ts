@@ -129,10 +129,12 @@ export interface Property {
 
 export interface ArticleFAQ {
   question: string;
+  answer?: string;
 }
 
 export interface ArticleSection {
   title: string;
+  body?: string;
 }
 
 export interface Article {
@@ -202,11 +204,36 @@ export interface Stat {
   label: string;
 }
 
-export interface CityPage {
+export interface CityDistrict {
+  name: string;
+  description: string;
+}
+
+export interface CityData {
   slug: string;
   name: string;
-  headline: string;
-  description: string;
+  h1: string;
+  intro: string;
+  marketStats: {
+    avgNightlyRate: string;
+    avgOccupancy: string;
+    demandDrivers: string;
+  };
+  districts: CityDistrict[];
+  regulations: {
+    heading: string;
+    items: string[];
+  };
+  cta: {
+    heading: string;
+    text: string;
+    buttonLabel: string;
+    buttonHref: string;
+  };
+}
+
+export interface CitiesData {
+  cities: CityData[];
 }
 
 export interface HomepageData {

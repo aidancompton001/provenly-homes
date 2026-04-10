@@ -43,7 +43,7 @@ function CellIcon({ value }: { value: string }) {
 
 export default function Comparison() {
   return (
-    <section className="bg-cream py-16 lg:py-24">
+    <section className="bg-cream-dark py-16 lg:py-24">
       <Container>
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto mb-12">

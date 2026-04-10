@@ -15,25 +15,64 @@
       "title": "Wie aufwendig ist Kurzzeitvermietung in Köln wirklich?",
       "category": "Grundlage & Orientierung",
       "date": "2026-02-26",
-      "readingTime": "",
+      "readingTime": "7 min",
       "author": "Stanislaw Beim",
       "description": "Kurzzeitvermietung wirkt einfach – ist operativ jedoch ein laufender Prozess. Dieser Leitfaden zeigt, welcher Aufwand 2026 in Köln realistisch entsteht.",
       "sections": [
-        { "title": "Warum Kurzzeitvermietung oft aufwendiger ist als gedacht" },
-        { "title": "Was operative Steuerung bedeutet" },
-        { "title": "Kurzzeitvermietung ist kein Inserat" },
-        { "title": "Gästekommunikation & Verfügbarkeit" },
-        { "title": "Preisstrategie & Auslastung steuern" }
+        {
+          "title": "Warum Kurzzeitvermietung oft aufwendiger ist als gedacht",
+          "body": "Viele Eigentümer unterschätzen den operativen Aufwand einer Kurzzeitvermietung. Anders als bei der klassischen Langzeitvermietung bedeutet jeder Gästewechsel einen vollständigen Prozessdurchlauf: Kommunikation, Check-in, Reinigung, Qualitätskontrolle und Bewertungsmanagement. Bei einer durchschnittlichen Aufenthaltsdauer von 3–5 Nächten ergeben sich pro Monat bis zu 8 vollständige Zyklen."
+        },
+        {
+          "title": "Was operative Steuerung bedeutet",
+          "body": "Operative Steuerung umfasst sechs Kernbereiche: Gästekommunikation (Anfragen, Check-in-Anweisungen, Problemlösung), Preismanagement (dynamische Anpassung nach Saison und Nachfrage), Reinigungskoordination (Qualitätskontrolle, Wäschelogistik), Zustandskontrolle (Inventar, Verschleiß, Wartung), Dokumentation (Belegung, Umsatz, Steuern) und Schadensmanagement (Versicherung, Kautionsabwicklung)."
+        },
+        {
+          "title": "Kurzzeitvermietung ist kein Inserat",
+          "body": "Ein Inserat auf Airbnb oder Booking.com ist erst der Anfang. Die eigentliche Arbeit beginnt danach: professionelle Fotos, optimierte Beschreibungen, Preisstrategien, schnelle Reaktionszeiten und konsistente Gästeerlebnisse. Ohne diese Elemente sinkt die Sichtbarkeit auf den Plattformen und damit die Auslastung."
+        },
+        {
+          "title": "Gästekommunikation & Verfügbarkeit",
+          "body": "Gäste erwarten schnelle Antworten — idealerweise innerhalb von 30 Minuten. Das betrifft nicht nur Buchungsanfragen, sondern auch Fragen während des Aufenthalts: WLAN-Probleme, Schlüssel, Restaurantempfehlungen. Diese Erreichbarkeit rund um die Uhr ist einer der größten Belastungsfaktoren für private Vermieter."
+        },
+        {
+          "title": "Preisstrategie & Auslastung steuern",
+          "body": "Dynamisches Pricing ist der Schlüssel zur Renditeoptimierung. Festpreise lassen in Hochphasen Geld liegen und führen in Nebensaisons zu Leerstand. Professionelle Steuerung berücksichtigt Messen, Feiertage, Wochentage, Vorlaufzeiten und Konkurrenzpreise — und passt die Raten täglich an."
+        }
       ],
       "faqs": [
-        { "question": "Wie viele Stunden pro Woche sind realistisch?" },
-        { "question": "Kann ich Kurzzeitvermietung nebenberuflich betreiben?" },
-        { "question": "Was passiert bei Schäden?" },
-        { "question": "Wie reagiere ich auf schlechte Bewertungen?" },
-        { "question": "Ist professionelle Verwaltung sinnvoll?" },
-        { "question": "Kann Automatisierung helfen?" },
-        { "question": "Wann kippt die Wirtschaftlichkeit?" },
-        { "question": "Ist der Markt gesättigt?" }
+        {
+          "question": "Wie viele Stunden pro Woche sind realistisch?",
+          "answer": "Je nach Auslastung und Objektgröße sollten Sie mit 10–15 Stunden pro Woche rechnen. Dazu gehören Kommunikation, Koordination der Reinigung, Check-in/out-Management und administrative Aufgaben."
+        },
+        {
+          "question": "Kann ich Kurzzeitvermietung nebenberuflich betreiben?",
+          "answer": "Grundsätzlich ja, aber es erfordert eine gute Organisation. Viele Eigentümer starten nebenberuflich und merken nach einigen Monaten, dass der Aufwand ohne professionelle Unterstützung kaum nachhaltig zu bewältigen ist."
+        },
+        {
+          "question": "Was passiert bei Schäden?",
+          "answer": "Plattformen wie Airbnb bieten einen Gastgeber-Schutz, der Schäden bis zu einem bestimmten Betrag abdeckt. Zusätzlich empfehlen wir eine separate Inventarversicherung und eine saubere Dokumentation des Zustands vor und nach jedem Aufenthalt."
+        },
+        {
+          "question": "Wie reagiere ich auf schlechte Bewertungen?",
+          "answer": "Sachlich, professionell und lösungsorientiert antworten. Schlechte Bewertungen sind oft Hinweise auf Verbesserungspotenzial. Eine professionelle Antwort zeigt zukünftigen Gästen, dass Sie Feedback ernst nehmen."
+        },
+        {
+          "question": "Ist professionelle Verwaltung sinnvoll?",
+          "answer": "Ab zwei Objekten oder bei einer Auslastung über 70% ist professionelle Verwaltung in der Regel wirtschaftlich sinnvoll. Die Kosten werden durch höhere Auslastung, bessere Preise und weniger Leerstand mehr als ausgeglichen."
+        },
+        {
+          "question": "Kann Automatisierung helfen?",
+          "answer": "Ja — Smart Locks für Self-Check-in, automatisierte Nachrichten für Gästekommunikation und Channel Manager für Buchungsverwaltung können den Aufwand deutlich reduzieren. Die Grundarbeit bleibt jedoch bestehen."
+        },
+        {
+          "question": "Wann kippt die Wirtschaftlichkeit?",
+          "answer": "Wenn die operative Belastung so hoch ist, dass Sie entweder Ihre Zeit oder Ihre Rendite opfern. Typische Warnsignale: sinkende Bewertungen, verspätete Antworten und zunehmender Leerstand."
+        },
+        {
+          "question": "Ist der Markt gesättigt?",
+          "answer": "In Köln ist der Markt kompetitiv, aber nicht gesättigt. Professionell geführte Objekte mit klarer Positionierung und konsistenter Qualität erzielen weiterhin überdurchschnittliche Ergebnisse."
+        }
       ],
       "keyQuotes": [
         "Der Unterschied zur klassischen Vermietung liegt nicht in der Mietdauer, sondern in der Prozessdichte.",
@@ -50,20 +89,56 @@
       "author": "Stanislaw Beim",
       "description": "Nicht jede Wohnung eignet sich für Kurzzeitvermietung in Köln. Dieser Leitfaden zeigt, welche Faktoren 2026 über Lage, Genehmigung und Rendite entscheiden.",
       "sections": [
-        { "title": "Wann sich KZV wirklich lohnt – und wann nicht" },
-        { "title": "5 Erfolgsfaktoren" },
-        { "title": "Einnahmen realistisch einschätzen" },
-        { "title": "Kosten und Risiken" }
+        {
+          "title": "Wann sich KZV wirklich lohnt – und wann nicht",
+          "body": "Kurzzeitvermietung lohnt sich vor allem in zentralen Lagen mit guter ÖPNV-Anbindung und in der Nähe von Nachfragetreibern wie Messe, Universität oder Touristenattraktionen. In Randlagen mit geringer touristischer Relevanz kann die Langzeitvermietung die bessere Wahl sein."
+        },
+        {
+          "title": "5 Erfolgsfaktoren",
+          "body": "Fünf Faktoren entscheiden über den Erfolg: 1) Stabile Nachfrage am Standort (Messe, Business, Tourismus), 2) Wettbewerbsfähiges Preisniveau, 3) Effiziente Prozesse (Check-in, Reinigung, Kommunikation), 4) Kontrollierbare Kostenstruktur (Reinigung, Plattformgebühren, Verschleiß), 5) Klare Positionierung des Objekts (Zielgruppe, Ausstattung, Fotos)."
+        },
+        {
+          "title": "Einnahmen realistisch einschätzen",
+          "body": "Eine realistische Kalkulation berücksichtigt: durchschnittliche Nachtrate (Köln: 120–180€), Auslastungsrate (72–85% bei professioneller Steuerung), saisonale Schwankungen, Plattformgebühren (3–15%) und operative Kosten. Der Nettoertrag liegt typischerweise 15–35% über der Langzeitvermietung."
+        },
+        {
+          "title": "Kosten und Risiken",
+          "body": "Zu den laufenden Kosten gehören: Reinigung (40–80€ pro Wechsel), Plattformgebühren, Verschleiß und Ersatzbeschaffungen, Verwaltungsaufwand und ggf. Verwaltungsgebühren. Risiken umfassen regulatorische Änderungen, Nachbarschaftskonflikte und saisonale Nachfrageschwankungen."
+        }
       ],
       "faqs": [
-        { "question": "Wie prüfe ich, ob meine Wohnung geeignet ist?" },
-        { "question": "Sind 1-Zimmer-Wohnungen geeignet?" },
-        { "question": "Wie hoch muss die Auslastung sein?" },
-        { "question": "Was sagt die WEG zur Kurzzeitvermietung?" },
-        { "question": "Kann ich zwischen Modellen wechseln?" },
-        { "question": "Ist das Umland wirtschaftlich interessanter?" },
-        { "question": "Welche Risiken bestehen?" },
-        { "question": "Ist professionelle Verwaltung sinnvoll?" }
+        {
+          "question": "Wie prüfe ich, ob meine Wohnung geeignet ist?",
+          "answer": "Prüfen Sie drei Kernfaktoren: Lage (Nähe zu Nachfragetreibern), Zustand (möbliert, gepflegt, fotogen) und Rechtslage (Genehmigung, WEG-Beschluss, Mietvertrag). Wir bieten eine kostenlose Ersteinschätzung an."
+        },
+        {
+          "question": "Sind 1-Zimmer-Wohnungen geeignet?",
+          "answer": "Ja, besonders in zentralen Lagen. 1-Zimmer-Apartments sind bei Geschäftsreisenden und Einzelreisenden sehr gefragt. Entscheidend sind Ausstattung und Sauberkeit."
+        },
+        {
+          "question": "Wie hoch muss die Auslastung sein?",
+          "answer": "Ab einer Auslastung von 60% übersteigt die Kurzzeitvermietung in der Regel die Langzeitmiete. Professionell gesteuerte Objekte in guten Lagen erreichen 72–85%."
+        },
+        {
+          "question": "Was sagt die WEG zur Kurzzeitvermietung?",
+          "answer": "Wohnungseigentümergemeinschaften können Kurzzeitvermietung einschränken, aber nicht pauschal verbieten (BGH-Urteil 2019). Prüfen Sie die Teilungserklärung und aktuelle WEG-Beschlüsse."
+        },
+        {
+          "question": "Kann ich zwischen Modellen wechseln?",
+          "answer": "Ja, ein Wechsel zwischen Lang- und Kurzzeitvermietung ist möglich. Beachten Sie Kündigungsfristen, Möblierungsaufwand und die Genehmigungslage."
+        },
+        {
+          "question": "Ist das Umland wirtschaftlich interessanter?",
+          "answer": "Das Umland (z.B. Leverkusen, Bergisch Gladbach) hat niedrigere Einstiegskosten, aber auch geringere Nachfrage und Preise. Die Rendite ist in zentralen Kölner Lagen typischerweise höher."
+        },
+        {
+          "question": "Welche Risiken bestehen?",
+          "answer": "Hauptrisiken: regulatorische Verschärfungen, saisonaler Leerstand, Schäden durch Gäste und steigende Betriebskosten. Professionelles Management minimiert diese Risiken erheblich."
+        },
+        {
+          "question": "Ist professionelle Verwaltung sinnvoll?",
+          "answer": "In den meisten Fällen ja. Die Verwaltungsgebühr (15–25% vom Umsatz) wird durch höhere Auslastung, optimierte Preise und professionelle Gästebetreuung mehr als kompensiert."
+        }
       ],
       "keyQuotes": [
         "Nicht der Umsatz entscheidet – sondern das, was übrig bleibt.",
@@ -72,30 +147,72 @@
     },
     {
       "slug": "kurzzeitvermietung-vs-langzeitvermietung-moebliert-koeln",
-      "title": "Kurzzeitvermietung vs. Langzeitvermietung vs. möblierte Vermietung in Köln 2026 – Renditevergleich",
+      "title": "Kurzzeitvermietung vs. Langzeitvermietung vs. möblierte Vermietung in Köln 2026",
       "category": "Marktanalyse & Entwicklung",
       "date": "2026-02-26",
       "readingTime": "9 min",
       "author": "Stanislaw Beim",
       "description": "Vergleich der drei Vermietungsmodelle in Köln 2026: Stabilität, operativer Aufwand und Ertragspotenzial im direkten Gegenüber.",
       "sections": [
-        { "title": "Definitionen aller drei Modelle" },
-        { "title": "Vergleich: Stabilität, operativer Aufwand, Ertragspotenzial" },
-        { "title": "Langzeitvermietung: stabil, wenig Aufwand, begrenztes Wachstum" },
-        { "title": "Möblierte Vermietung: höhere Raten, Zielgruppe Projektarbeiter/Expats" },
-        { "title": "Kurzzeitvermietung: 15–35% mehr Umsatzpotenzial, hohes Management" },
-        { "title": "Beste Stadtteile: Innenstadt, Deutz, Ehrenfeld, Nippes, Lindenthal" }
+        {
+          "title": "Definitionen aller drei Modelle",
+          "body": "Langzeitvermietung: klassischer unbefristeter Mietvertrag, stabile Einnahmen, minimaler Aufwand. Möblierte Vermietung: befristete Vermietung an Projektarbeiter, Expats oder Studenten, typisch 1–6 Monate. Kurzzeitvermietung: tageweise Vermietung über Plattformen wie Airbnb, höchstes Ertragspotenzial bei höchstem Aufwand."
+        },
+        {
+          "title": "Vergleich: Stabilität, operativer Aufwand, Ertragspotenzial",
+          "body": "Langzeitvermietung bietet maximale Stabilität bei minimalem Aufwand, aber begrenztem Wachstum. Möblierte Vermietung liegt in der Mitte: höhere Raten als Langzeit, weniger Aufwand als Kurzzeit. Kurzzeitvermietung hat das höchste Ertragspotenzial (15–35% mehr), erfordert aber professionelles Management."
+        },
+        {
+          "title": "Langzeitvermietung: stabil, wenig Aufwand, begrenztes Wachstum",
+          "body": "Vorteile: Planbare Einnahmen, Mietpreisbremse schützt vor Ausfall, minimaler Verwaltungsaufwand. Nachteile: Begrenztes Renditepotenzial, Mietanpassungen nur im Rahmen des Mietspiegels, lange Kündigungsfristen bei Problemfällen."
+        },
+        {
+          "title": "Möblierte Vermietung: höhere Raten, Zielgruppe Projektarbeiter/Expats",
+          "body": "Möblierte Vermietung zielt auf mittelfristige Mieter: Projektarbeiter, medizinisches Personal, Expats, Studenten. Die Raten liegen 30–50% über der Langzeitmiete. Der Aufwand ist moderat — weniger Gästewechsel als bei KZV, aber höhere Anforderungen an Ausstattung und Möblierung."
+        },
+        {
+          "title": "Kurzzeitvermietung: 15–35% mehr Umsatzpotenzial, hohes Management",
+          "body": "KZV bietet die höchsten Erträge, erfordert aber tägliche operative Steuerung: dynamische Preise, Gästekommunikation, Reinigung nach jedem Aufenthalt, Qualitätskontrolle. Professionelle Verwaltung macht dieses Modell auch für Eigentümer rentabel, die keine Zeit für operative Arbeit haben."
+        },
+        {
+          "title": "Beste Stadtteile: Innenstadt, Deutz, Ehrenfeld, Nippes, Lindenthal",
+          "body": "Für KZV: Innenstadt und Deutz (höchste Nachfrage, Messe). Für möblierte Vermietung: Ehrenfeld und Nippes (jüngere Zielgruppe, moderate Preise). Für Langzeit: Lindenthal und Sülz (stabile Nachfrage, familienorientiert). Die Wahl des Modells hängt stark vom Standort ab."
+        }
       ],
       "faqs": [
-        { "question": "Wie unterscheiden sich die Einnahmen der drei Modelle?" },
-        { "question": "Wie hoch ist der Aufwand jeweils?" },
-        { "question": "Welche Stadtteile eignen sich für welches Modell?" },
-        { "question": "Ist Kurzzeitvermietung 2026 noch sinnvoll?" },
-        { "question": "Welche Zusatzkosten entstehen?" },
-        { "question": "Kann ich zwischen Modellen wechseln?" },
-        { "question": "Lohnt sich das Umland?" }
+        {
+          "question": "Wie unterscheiden sich die Einnahmen der drei Modelle?",
+          "answer": "Beispiel Köln-Deutz, 60m²: Langzeit ca. 850€/Monat, möbliert ca. 1.200€/Monat, Kurzzeit ca. 1.400–1.800€/Monat (bei 75% Auslastung). Abzüglich Kosten liegt die Netto-Rendite der KZV 15–35% über der Langzeitvermietung."
+        },
+        {
+          "question": "Wie hoch ist der Aufwand jeweils?",
+          "answer": "Langzeit: 1–2 Stunden/Monat. Möbliert: 3–5 Stunden/Monat. Kurzzeit: 10–15 Stunden/Woche (selbst) oder 2–3 Stunden/Woche (mit professioneller Verwaltung)."
+        },
+        {
+          "question": "Welche Stadtteile eignen sich für welches Modell?",
+          "answer": "Innenstadt/Deutz: ideal für KZV (Messe, Tourismus). Ehrenfeld/Nippes: gut für möblierte Vermietung (junge Berufstätige). Lindenthal/Sülz: optimal für Langzeit (Familien)."
+        },
+        {
+          "question": "Ist Kurzzeitvermietung 2026 noch sinnvoll?",
+          "answer": "Ja, bei professioneller Steuerung und Einhaltung der Regularien. Der Markt in Köln ist stabil, die Nachfrage durch Messen und Geschäftsreisende hoch."
+        },
+        {
+          "question": "Welche Zusatzkosten entstehen?",
+          "answer": "KZV: Reinigung (40–80€/Wechsel), Plattformgebühren (3–15%), Verschleiß, Verwaltung. Möbliert: Möblierungskosten, gelegentliche Instandhaltung. Langzeit: minimale laufende Kosten."
+        },
+        {
+          "question": "Kann ich zwischen Modellen wechseln?",
+          "answer": "Ja, ein Wechsel ist möglich. Von Langzeit zu KZV: Möblierung erforderlich, Genehmigung prüfen. Von KZV zu Langzeit: Entmöblierung optional, Mietvertrag aufsetzen."
+        },
+        {
+          "question": "Lohnt sich das Umland?",
+          "answer": "Für KZV eher nicht — die Nachfrage konzentriert sich auf Stadtzentren. Für möblierte Vermietung können Orte wie Leverkusen oder Bergisch Gladbach interessant sein, besonders bei Nähe zu großen Arbeitgebern."
+        }
       ],
-      "keyQuotes": []
+      "keyQuotes": [
+        "Die Wahl des Vermietungsmodells ist keine Geschmacksfrage, sondern eine Standort- und Kapazitätsentscheidung.",
+        "Professionelle Kurzzeitvermietung bedeutet: maximale Rendite bei kalkuliertem Aufwand."
+      ]
     },
     {
       "slug": "kurzzeitvermietung-koeln-2026-chancen-risiken-gesetzeslage",
@@ -106,14 +223,45 @@
       "author": "Stanislaw Beim",
       "description": "Rechtliche Rahmenbedingungen, Marktchancen und Risiken der Kurzzeitvermietung in Köln 2026: Zweckentfremdungssatzung, 90-Tage-Regel und Registrierungspflicht.",
       "sections": [
-        { "title": "Rechtlicher Rahmen: Zweckentfremdungssatzung und 90-Tage-Regel" },
-        { "title": "Markt: Geschäftsreisende, Projektarbeiter, Messebesucher, Touristen" },
-        { "title": "Top-Stadtteile: Innenstadt, Deutz, Ehrenfeld, Nippes, Lindenthal" },
-        { "title": "Gesetzliche Anforderungen: Registrierung, Genehmigung, Dokumentation, Bußgelder" },
-        { "title": "Rendite: 15–35% mehr als Langzeitvermietung" },
-        { "title": "Risiken: Regulierung, Nachbarschaftskonflikte, Schäden" }
+        {
+          "title": "Rechtlicher Rahmen: Zweckentfremdungssatzung und 90-Tage-Regel",
+          "body": "Seit 2014 gilt in Köln die Zweckentfremdungssatzung. Wer seine Wohnung mehr als 90 Tage pro Jahr kurzzeitig vermietet, benötigt eine Genehmigung der Stadt. Seit 2025 ist zusätzlich eine Wohnraum-Identitätsnummer Pflicht, die in jedem Inserat angegeben werden muss."
+        },
+        {
+          "title": "Markt: Geschäftsreisende, Projektarbeiter, Messebesucher, Touristen",
+          "body": "Köln profitiert von einer diversifizierten Nachfrage: Koelnmesse zieht jährlich Millionen Besucher an, die Medien- und Versicherungsbranche sorgt für Business-Reisende, und der Dom ist einer der meistbesuchten Touristenorte Deutschlands. Diese Vielfalt macht den Markt resilient."
+        },
+        {
+          "title": "Top-Stadtteile: Innenstadt, Deutz, Ehrenfeld, Nippes, Lindenthal",
+          "body": "Innenstadt: höchste Raten und Auslastung. Deutz: Messenähe, ICE-Anschluss. Ehrenfeld: Kreativszene, junge Reisende. Nippes: familienfreundlich, gute Anbindung. Lindenthal: gehobenes Segment, längere Aufenthalte."
+        },
+        {
+          "title": "Gesetzliche Anforderungen: Registrierung, Genehmigung, Dokumentation, Bußgelder",
+          "body": "Pflichten für Vermieter: 1) Registrierung beim Wohnungsamt, 2) Genehmigung ab 90 Tagen/Jahr, 3) Wohnraum-ID in allen Inseraten, 4) Dokumentation der Vermietungstage, 5) Steuerliche Erfassung. Bußgelder bei Verstößen können bis zu 50.000€ betragen."
+        },
+        {
+          "title": "Rendite: 15–35% mehr als Langzeitvermietung",
+          "body": "Bei professioneller Steuerung liegt die Rendite der Kurzzeitvermietung in Köln 15–35% über der Langzeitvermietung. Entscheidend sind optimale Preisgestaltung, hohe Auslastung und kontrollierte Betriebskosten."
+        },
+        {
+          "title": "Risiken: Regulierung, Nachbarschaftskonflikte, Schäden",
+          "body": "Die drei größten Risiken: 1) Regulatorische Verschärfungen (weitere Einschränkungen möglich), 2) Nachbarschaftskonflikte (Lärm, Frequenz, Müll), 3) Sachschäden durch Gäste. Professionelles Management mit klaren Prozessen minimiert alle drei Risiken erheblich."
+        }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Brauche ich eine Genehmigung in Köln?",
+          "answer": "Ja, wenn Sie Ihre Wohnung mehr als 90 Tage pro Jahr kurzzeitig vermieten. Unterhalb dieser Grenze ist eine Anzeige beim Wohnungsamt ausreichend."
+        },
+        {
+          "question": "Was ist die Wohnraum-Identitätsnummer?",
+          "answer": "Eine Registrierungsnummer, die seit 2025 in Köln für alle Kurzzeitvermietungen Pflicht ist. Sie muss in jedem Inserat auf allen Plattformen angegeben werden."
+        },
+        {
+          "question": "Wie hoch sind die Bußgelder?",
+          "answer": "Bis zu 50.000€ bei Verstößen gegen die Zweckentfremdungssatzung. In der Praxis liegen die Bußgelder meist zwischen 5.000€ und 25.000€."
+        }
+      ],
       "keyQuotes": [
         "Kurz gesagt: Kurzzeitvermietung funktioniert in Köln – aber nur innerhalb klarer Grenzen.",
         "Wer strukturiert arbeitet, kann weiterhin erfolgreich sein."
@@ -127,9 +275,42 @@
       "readingTime": "10 min",
       "author": "Stanislaw Beim",
       "description": "Grundlagen der Kurzzeitvermietung: Was Eigentümer wissen sollten, bevor sie starten.",
-      "sections": [],
-      "faqs": [],
-      "keyQuotes": []
+      "sections": [
+        {
+          "title": "Was ist Kurzzeitvermietung?",
+          "body": "Kurzzeitvermietung bezeichnet die tageweise Vermietung möblierter Wohnungen an wechselnde Gäste. Im Gegensatz zur klassischen Vermietung handelt es sich um ein aktives Geschäftsmodell mit höherem Ertragspotenzial, aber auch mit deutlich mehr operativem Aufwand."
+        },
+        {
+          "title": "Für wen eignet sich KZV?",
+          "body": "KZV eignet sich für Eigentümer mit Immobilien in nachfragestarken Lagen, die bereit sind, entweder selbst aktiv zu verwalten oder professionelle Verwaltung zu beauftragen. Besonders geeignet sind Objekte in Stadtzentren, Messenähe oder touristischen Hotspots."
+        },
+        {
+          "title": "Die wichtigsten Schritte zum Start",
+          "body": "1) Marktanalyse: Ist Ihr Standort für KZV geeignet? 2) Rechtliche Prüfung: Genehmigungen, WEG, Mietvertrag. 3) Objekt vorbereiten: Möblierung, Fotos, Ausstattung. 4) Plattformen: Inserate erstellen, Preise setzen. 5) Prozesse: Check-in, Reinigung, Kommunikation definieren."
+        },
+        {
+          "title": "Häufige Fehler vermeiden",
+          "body": "Die häufigsten Fehler beim Einstieg: unrealistische Ertragserwartungen, Unterschätzung des operativen Aufwands, fehlende Genehmigungen, schlechte Fotos und mangelnde Gästekommunikation. Jeder dieser Fehler kostet Auslastung und damit Rendite."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Wie viel Startkapital brauche ich?",
+          "answer": "Für die Erstmöblierung einer 60m²-Wohnung sollten Sie 5.000–15.000€ einplanen. Dazu kommen professionelle Fotos (300–800€), Grundausstattung (Bettwäsche, Handtücher, Küchenutensilien) und ggf. Smart-Lock-Systeme."
+        },
+        {
+          "question": "Wie schnell kann ich starten?",
+          "answer": "Von der Entscheidung bis zum ersten Gast vergehen typischerweise 4–8 Wochen. Das beinhaltet Genehmigungsprüfung, Möblierung, Fototermin und Inseraterstellung."
+        },
+        {
+          "question": "Brauche ich einen Gewerbeschein?",
+          "answer": "Bei regelmäßiger Vermietung ist eine Gewerbeanmeldung in der Regel erforderlich. Steuerlich werden die Einnahmen als Einkünfte aus Gewerbebetrieb oder Vermietung und Verpachtung behandelt — lassen Sie sich steuerlich beraten."
+        }
+      ],
+      "keyQuotes": [
+        "Kurzzeitvermietung ist kein Nebenprojekt — es ist ein Geschäftsmodell.",
+        "Der beste Zeitpunkt zum Starten ist, wenn Sie die Grundlagen verstanden haben."
+      ]
     }
   ]
 }

@@ -1,5 +1,12 @@
 import type { Property } from "@/data/types";
+import { getImageUrl } from "@/lib/getImageUrl";
 import Badge from "./Badge";
+
+const propertyImages: Record<string, string> = {
+  "rheinabend-suite": "/images/property-rheinabend-1.png",
+  "rheinblick-family-residence": "/images/property-rheinblick-1.png",
+  "urban-skyline-loft": "/images/property-urban-1.png",
+};
 
 type PropertyCardProps = Pick<
   Property,
@@ -22,29 +29,40 @@ export default function PropertyCard({
     <a
       href={`/objekte/${slug}`}
       className={[
-        "group block bg-cream rounded-xl shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_4px_16px_rgba(58,58,58,0.1)] transition-shadow duration-300 overflow-hidden",
+        "group block bg-cream rounded-xl shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_8px_24px_rgba(58,58,58,0.12)] transition-all duration-300 overflow-hidden cursor-pointer",
         className,
       ]
         .filter(Boolean)
         .join(" ")}
     >
-      {/* Image placeholder */}
+      {/* Property image */}
       <div className="aspect-video bg-sand relative overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <svg
-            width="48"
-            height="48"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="text-cream/60"
-            aria-hidden="true"
-          >
-            <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" strokeWidth="1.5" />
-            <circle cx="17" cy="21" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-            <path d="M6 32L16 24L24 30L32 22L42 30V35C42 36.6569 40.6569 38 39 38H9C7.34315 38 6 36.6569 6 35V32Z" stroke="currentColor" strokeWidth="1.5" />
-          </svg>
-        </div>
+        {propertyImages[slug] ? (
+          <img
+            src={getImageUrl(propertyImages[slug])}
+            alt={name}
+            width={600}
+            height={400}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+            loading="lazy"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="text-cream/60"
+              aria-hidden="true"
+            >
+              <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" strokeWidth="1.5" />
+              <circle cx="17" cy="21" r="3.5" stroke="currentColor" strokeWidth="1.5" />
+              <path d="M6 32L16 24L24 30L32 22L42 30V35C42 36.6569 40.6569 38 39 38H9C7.34315 38 6 36.6569 6 35V32Z" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          </div>
+        )}
         {feature && (
           <div className="absolute top-3 left-3">
             <Badge variant="copper">{feature}</Badge>

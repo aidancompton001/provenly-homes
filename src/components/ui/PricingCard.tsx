@@ -40,8 +40,10 @@ export default function PricingCard({
   return (
     <div
       className={[
-        "bg-cream rounded-xl p-6 flex flex-col shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_4px_16px_rgba(58,58,58,0.1)] transition-shadow duration-300",
-        highlighted ? "ring-2 ring-copper" : "",
+        "bg-cream rounded-xl p-6 flex flex-col transition-all duration-300",
+        highlighted
+          ? "ring-2 ring-copper shadow-[0_8px_24px_rgba(184,115,51,0.15)] scale-[1.03] relative z-10"
+          : "shadow-[0_2px_8px_rgba(58,58,58,0.06)] hover:shadow-[0_4px_16px_rgba(58,58,58,0.1)]",
         className,
       ]
         .filter(Boolean)

@@ -94,7 +94,7 @@ function ServiceIcon({ icon }: { icon: string }) {
 
 export default function Services() {
   return (
-    <section className="bg-cream py-16 lg:py-24">
+    <section id="services" className="bg-cream py-16 lg:py-24">
       <Container>
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto mb-12">
@@ -116,7 +116,7 @@ export default function Services() {
             <Card
               key={service.id}
               hover
-              className="border border-sand"
+              className="border border-sand hover:border-copper/40 transition-colors duration-200"
             >
               <div className="mb-4">
                 <ServiceIcon icon={service.icon} />

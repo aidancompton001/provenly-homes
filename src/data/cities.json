@@ -1,0 +1,139 @@
+{
+  "cities": [
+    {
+      "slug": "koeln",
+      "name": "Köln",
+      "h1": "Kurzzeitvermietung Köln",
+      "intro": "Köln ist einer der attraktivsten Standorte für Kurzzeitvermietung in NRW. Messen, Tourismus, Geschäftsreisende und eine stabile Nachfrage machen die Domstadt zum idealen Markt für professionell geführte Ferienunterkünfte.",
+      "marketStats": {
+        "avgNightlyRate": "120–180€",
+        "avgOccupancy": "72–85%",
+        "demandDrivers": "Messestadt, Tourismus, Geschäftsreisende, Projektarbeiter"
+      },
+      "districts": [
+        {
+          "name": "Innenstadt",
+          "description": "Zentrale Lage mit höchster Nachfrage. Dom, Altstadt und Hauptbahnhof in unmittelbarer Nähe. Ideal für Business- und Städtereisende."
+        },
+        {
+          "name": "Deutz",
+          "description": "Rechtsrheinisch gegenüber der Altstadt. Messegelände, KölnArena und ICE-Bahnhof Messe/Deutz. Perfekt für Messebesucher."
+        },
+        {
+          "name": "Ehrenfeld",
+          "description": "Kreatives Szeneviertel mit junger Zielgruppe. Cafés, Galerien und Nachtleben. Beliebt bei Kulturreisenden und Digital Nomads."
+        },
+        {
+          "name": "Nippes",
+          "description": "Familienfreundlich mit hoher Lebensqualität. Wilhelmplatz als Zentrum. Gute Anbindung an die Innenstadt."
+        },
+        {
+          "name": "Lindenthal",
+          "description": "Gehobenes Wohnviertel mit Universitätsnähe. Ruhig, grün und dennoch zentral. Zielgruppe: Familien und längere Aufenthalte."
+        }
+      ],
+      "regulations": {
+        "heading": "Rechtlicher Rahmen in Köln",
+        "items": [
+          "Zweckentfremdungssatzung seit 2014 in Kraft",
+          "Genehmigungspflicht für Kurzzeitvermietung über 90 Tage/Jahr",
+          "Wohnraum-Identitätsnummer erforderlich seit 2025",
+          "Registrierungspflicht bei der Stadt Köln",
+          "Bußgelder bei Verstößen bis zu 50.000€"
+        ]
+      },
+      "cta": {
+        "heading": "Kurzzeitvermietung in Köln starten?",
+        "text": "Wir analysieren Ihr Objekt, prüfen die Genehmigungslage und entwickeln eine individuelle Strategie für Ihren Standort in Köln.",
+        "buttonLabel": "Erstgespräch vereinbaren",
+        "buttonHref": "/kontakt"
+      }
+    },
+    {
+      "slug": "bonn",
+      "name": "Bonn",
+      "h1": "Kurzzeitvermietung Bonn",
+      "intro": "Als ehemalige Bundeshauptstadt und UN-Standort bietet Bonn eine stabile Nachfrage durch internationale Organisationen, Konferenzen und Geschäftsreisende. Der Markt ist weniger kompetitiv als Köln, bietet aber solide Renditen.",
+      "marketStats": {
+        "avgNightlyRate": "100–150€",
+        "avgOccupancy": "65–78%",
+        "demandDrivers": "UN-Campus, Deutsche Welle, Konferenzen, Tourismus (Beethoven)"
+      },
+      "districts": [
+        {
+          "name": "Zentrum",
+          "description": "Rund um Marktplatz und Münsterplatz. Kurze Wege zu Hauptbahnhof, Universität und Einkaufsmeile. Höchste Nachfrage."
+        },
+        {
+          "name": "Bad Godesberg",
+          "description": "Diplomatenviertel mit internationalem Flair. Nähe zum UN-Campus und World Conference Center. Zielgruppe: internationale Gäste."
+        },
+        {
+          "name": "Beuel",
+          "description": "Rechtsrheinisch mit eigenem Charme. Gute Rheinlage und familienfreundliche Infrastruktur. Preisgünstiger als Zentrum."
+        }
+      ],
+      "regulations": {
+        "heading": "Rechtlicher Rahmen in Bonn",
+        "items": [
+          "Zweckentfremdungssatzung in Bonn in Vorbereitung",
+          "Aktuell keine spezifische Genehmigungspflicht für KZV",
+          "Gewerbeanmeldung empfohlen",
+          "Meldepflicht gemäß Bundesmeldegesetz",
+          "Steuerliche Erfassung beim Finanzamt erforderlich"
+        ]
+      },
+      "cta": {
+        "heading": "Kurzzeitvermietung in Bonn starten?",
+        "text": "Bonn bietet ideale Voraussetzungen für professionelle Kurzzeitvermietung. Wir helfen Ihnen, das Potenzial Ihres Objekts zu nutzen.",
+        "buttonLabel": "Erstgespräch vereinbaren",
+        "buttonHref": "/kontakt"
+      }
+    },
+    {
+      "slug": "duesseldorf",
+      "name": "Düsseldorf",
+      "h1": "Kurzzeitvermietung Düsseldorf",
+      "intro": "Düsseldorf als Landeshauptstadt NRW, Messestadt und internationaler Wirtschaftsstandort bietet exzellente Bedingungen für Kurzzeitvermietung. Hohe Nachfrage durch Messen, Mode, Medien und japanische Community.",
+      "marketStats": {
+        "avgNightlyRate": "130–200€",
+        "avgOccupancy": "70–82%",
+        "demandDrivers": "Messe Düsseldorf, Medienhafen, Japantown, Mode & Wirtschaft"
+      },
+      "districts": [
+        {
+          "name": "Altstadt",
+          "description": "Die 'längste Theke der Welt'. Höchste touristische Nachfrage. Ideal für Kurzaufenthalte und Wochenendgäste."
+        },
+        {
+          "name": "Bilk",
+          "description": "Studentisch und kreativ. Nähe zur Universität und zum Medienhafen. Beliebt bei jüngeren Reisenden und Projektarbeitern."
+        },
+        {
+          "name": "Flingern",
+          "description": "Aufstrebendes Szeneviertel mit Galerien und Gastronomie. Gute ÖPNV-Anbindung. Steigende Nachfrage."
+        },
+        {
+          "name": "Oberkassel",
+          "description": "Linksrheinisch mit Blick auf die Skyline. Gehobenes Wohnviertel. Zielgruppe: Business-Gäste und Familien."
+        }
+      ],
+      "regulations": {
+        "heading": "Rechtlicher Rahmen in Düsseldorf",
+        "items": [
+          "Zweckentfremdungsverordnung seit 2019",
+          "Genehmigungspflicht für gewerbliche Kurzzeitvermietung",
+          "Registrierungsnummer erforderlich",
+          "Bußgelder bei Verstößen bis zu 100.000€",
+          "Enge Zusammenarbeit der Stadt mit Plattformbetreibern"
+        ]
+      },
+      "cta": {
+        "heading": "Kurzzeitvermietung in Düsseldorf starten?",
+        "text": "Düsseldorf bietet Premium-Potenzial für professionelle Kurzzeitvermietung. Kontaktieren Sie uns für eine individuelle Marktanalyse.",
+        "buttonLabel": "Erstgespräch vereinbaren",
+        "buttonHref": "/kontakt"
+      }
+    }
+  ]
+}

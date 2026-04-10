@@ -293,7 +293,7 @@ describe("JSON import chains", () => {
 /* ================================================================== */
 describe("ContactForm component structure", () => {
   it("renders all 4 section titles from JSON", () => {
-    const formData = readJSON("contact-form.json");
+    readJSON("contact-form.json"); // verify JSON loads
     const content = readComponent(SECTIONS_DIR, "ContactForm.tsx");
 
     // Component should iterate over sections dynamically
@@ -377,5 +377,131 @@ describe("Kontakt page structure", () => {
     );
     expect(content).not.toMatch(/\[.*Form.*\]/);
     expect(content).not.toMatch(/\[.*Kontakt.*\]/);
+  });
+});
+
+/* ================================================================== */
+/*  7. Phase 5B: Subpage data + cities.json                            */
+/* ================================================================== */
+describe("Phase 5B: Subpage data integrity", () => {
+  it("cities.json has 3 cities with districts", () => {
+    const data = readJSON("cities.json");
+    expect(data.cities).toHaveLength(3);
+    for (const city of data.cities) {
+      expect(city.slug).toBeTruthy();
+      expect(city.name).toBeTruthy();
+      expect(city.h1).toBeTruthy();
+      expect(city.intro.length).toBeGreaterThan(50);
+      expect(city.districts.length).toBeGreaterThanOrEqual(3);
+      expect(city.regulations.items.length).toBeGreaterThanOrEqual(3);
+      expect(city.cta.buttonHref).toBe("/kontakt");
+    }
+  });
+
+  it("articles.json has body content in all sections", () => {
+    const data = readJSON("articles.json");
+    for (const article of data.articles) {
+      for (const section of article.sections) {
+        expect(section.body).toBeTruthy();
+        expect(section.body.length).toBeGreaterThan(50);
+      }
+    }
+  });
+
+  it("articles.json has FAQ answers for articles with FAQs", () => {
+    const data = readJSON("articles.json");
+    for (const article of data.articles) {
+      for (const faq of article.faqs) {
+        expect(faq.answer).toBeTruthy();
+        expect(faq.answer.length).toBeGreaterThan(20);
+      }
+    }
+  });
+
+  it("articles.json has readingTime for all articles", () => {
+    const data = readJSON("articles.json");
+    for (const article of data.articles) {
+      expect(article.readingTime).toBeTruthy();
+      expect(article.readingTime).toMatch(/\d+ min/);
+    }
+  });
+
+  it("site.json navigation uses correct anchor/page links", () => {
+    const site = readJSON("site.json");
+    const hrefs = site.navigation.map((n: { href: string }) => n.href);
+    expect(hrefs).toContain("/#services");
+    expect(hrefs).toContain("/#pricing");
+    expect(hrefs).toContain("/objekte");
+    expect(hrefs).toContain("/ratgeber");
+    expect(hrefs).toContain("/kontakt");
+  });
+});
+
+/* ================================================================== */
+/*  8. Phase 6: QA — no stubs in subpages                             */
+/* ================================================================== */
+describe("Phase 6: Subpage stub check", () => {
+  const subpages = [
+    "app/objekte/page.tsx",
+    "app/objekte/[slug]/page.tsx",
+    "app/ratgeber/page.tsx",
+    "app/ratgeber/[slug]/page.tsx",
+    "app/standorte/koeln/page.tsx",
+    "app/standorte/bonn/page.tsx",
+    "app/standorte/duesseldorf/page.tsx",
+    "app/impressum/page.tsx",
+    "app/datenschutz/page.tsx",
+    "app/not-found.tsx",
+  ];
+
+  for (const page of subpages) {
+    it(`${page} has no stub placeholder text`, () => {
+      const content = fs.readFileSync(path.resolve(SRC_DIR, page), "utf-8");
+      expect(content).not.toMatch(/\[.*Page.*\]/);
+      expect(content).not.toMatch(/\[.*Content.*\]/);
+      expect(content).not.toMatch(/\[.*Grid.*\]/);
+      expect(content).not.toMatch(/\[.*Listing.*\]/);
+      expect(content).not.toMatch(/text-zinc-/);
+    });
+
+    it(`${page} is > 500 bytes`, () => {
+      const stat = fs.statSync(path.resolve(SRC_DIR, page));
+      expect(stat.size).toBeGreaterThan(500);
+    });
+  }
+});
+
+/* ================================================================== */
+/*  9. Phase 6: Schema.org + SEO files exist                           */
+/* ================================================================== */
+describe("Phase 6: SEO verification", () => {
+  it("layout.tsx has Schema.org LocalBusiness JSON-LD", () => {
+    const content = fs.readFileSync(path.resolve(SRC_DIR, "app/layout.tsx"), "utf-8");
+    expect(content).toContain("application/ld+json");
+    expect(content).toContain("LocalBusiness");
+    expect(content).toContain("Provenly Homes");
+  });
+
+  it("sitemap.ts exists and exports function", () => {
+    const content = fs.readFileSync(path.resolve(SRC_DIR, "app/sitemap.ts"), "utf-8");
+    expect(content).toContain("export default function sitemap");
+    expect(content).toContain("provenlyhomes.de");
+  });
+
+  it("robots.ts exists and exports function", () => {
+    const content = fs.readFileSync(path.resolve(SRC_DIR, "app/robots.ts"), "utf-8");
+    expect(content).toContain("export default function robots");
+  });
+
+  it("favicon and OG image files exist", () => {
+    expect(fs.existsSync(path.resolve(SRC_DIR, "app/icon.svg"))).toBe(true);
+    expect(fs.existsSync(path.resolve(SRC_DIR, "app/apple-icon.png"))).toBe(true);
+    expect(fs.existsSync(path.resolve(SRC_DIR, "app/opengraph-image.png"))).toBe(true);
+  });
+
+  it("datenschutz does NOT mention Framer B.V.", () => {
+    const content = fs.readFileSync(path.resolve(SRC_DIR, "app/datenschutz/page.tsx"), "utf-8");
+    expect(content).not.toContain("Framer B.V.");
+    expect(content).toContain("GitHub Pages");
   });
 });

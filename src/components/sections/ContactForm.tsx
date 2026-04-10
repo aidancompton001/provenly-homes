@@ -228,13 +228,14 @@ export default function ContactForm() {
       <input type="hidden" name="_subject" value={FORMSUBMIT_CONFIG._subject} />
       <input type="hidden" name="_template" value={FORMSUBMIT_CONFIG._template} />
 
-      {/* Honeypot */}
+      {/* Honeypot — hidden offscreen, not display:none (better anti-bot) */}
       <input
         type="text"
         name="_honey"
-        style={{ display: "none" }}
+        className="absolute left-[-9999px]"
         tabIndex={-1}
         autoComplete="off"
+        aria-hidden="true"
       />
 
       {data.sections.map((section) => (

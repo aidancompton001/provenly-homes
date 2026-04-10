@@ -41,6 +41,32 @@ export default function RootLayout({
         <MotionProvider>
           {children}
         </MotionProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Provenly Homes",
+              description: "Professionelle Kurzzeitvermietung für Eigentümer in NRW.",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Nathan-Kahn-Str. 15",
+                addressLocality: "Köln",
+                postalCode: "51061",
+                addressCountry: "DE",
+              },
+              telephone: "+49 163 4555833",
+              email: "provenlyhomes@web.de",
+              url: "https://provenlyhomes.de",
+              areaServed: [
+                { "@type": "City", name: "Köln" },
+                { "@type": "City", name: "Bonn" },
+                { "@type": "City", name: "Düsseldorf" },
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );

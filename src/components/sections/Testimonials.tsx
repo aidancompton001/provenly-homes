@@ -76,7 +76,7 @@ export default function Testimonials() {
               initial={{ opacity: 0, x: direction * 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: direction * -50 }}
-              transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+              transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
               className="bg-cream rounded-xl p-8 lg:p-10 border border-sand shadow-[0_2px_8px_rgba(58,58,58,0.06)]"
             >
               <div className="flex items-center gap-4 mb-6">
@@ -119,18 +119,22 @@ export default function Testimonials() {
         </div>
 
         {/* Dots navigation */}
-        <div className="flex items-center justify-center gap-2 mt-8">
+        <div className="flex items-center justify-center gap-1 mt-8">
           {data.testimonials.map((t, i) => (
             <button
               key={t.id}
               type="button"
               onClick={() => goTo(i)}
-              className={[
-                "w-2.5 h-2.5 rounded-full transition-colors duration-200",
-                i === current ? "bg-copper" : "bg-sand",
-              ].join(" ")}
+              className="p-2 cursor-pointer"
               aria-label={`Testimonial ${i + 1}`}
-            />
+            >
+              <span
+                className={[
+                  "block rounded-full transition-all duration-300",
+                  i === current ? "bg-copper w-3 h-3" : "bg-sand w-2 h-2",
+                ].join(" ")}
+              />
+            </button>
           ))}
         </div>
       </Container>
