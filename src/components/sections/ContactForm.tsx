@@ -16,33 +16,29 @@ const data = contactData as ContactFormData;
 type FormState = "idle" | "submitting" | "success" | "error";
 
 function InputField({ field }: { field: ContactFormField }) {
-  const baseClasses =
-    "w-full border border-sand bg-white px-4 py-3 rounded-lg font-body text-charcoal placeholder:text-charcoal-light/60 focus:border-copper focus:outline-none focus:ring-1 focus:ring-copper transition-colors duration-200";
-
   return (
-    <div>
+    <div className="floating-label-wrapper relative">
+      <input
+        id={field.id}
+        name={field.id}
+        type={field.type}
+        placeholder=" "
+        required={field.required}
+        className="peer w-full border border-sand bg-white px-4 pt-6 pb-2 rounded-lg font-body text-charcoal focus:border-copper focus:outline-none focus:ring-1 focus:ring-copper transition-colors duration-200"
+      />
+      {/* DM line 324: floating label — moves up on focus via CSS peer */}
       <label
         htmlFor={field.id}
-        className="block font-body text-sm font-medium text-charcoal mb-1.5"
+        className="absolute left-4 top-4 font-body text-sm text-charcoal-light pointer-events-none transition-all duration-200 origin-left peer-focus:top-1.5 peer-focus:text-xs peer-focus:text-copper peer-[:not(:placeholder-shown)]:top-1.5 peer-[:not(:placeholder-shown)]:text-xs peer-[:not(:placeholder-shown)]:text-copper"
       >
         {field.label}
         {field.required && <span className="text-copper ml-0.5">*</span>}
       </label>
-      <div className="relative">
-        <input
-          id={field.id}
-          name={field.id}
-          type={field.type}
-          placeholder={field.placeholder}
-          required={field.required}
-          className={baseClasses}
-        />
-        {field.suffix && (
-          <span className="absolute right-4 top-1/2 -translate-y-1/2 font-body text-sm text-charcoal-light pointer-events-none">
-            {field.suffix}
-          </span>
-        )}
-      </div>
+      {field.suffix && (
+        <span className="absolute right-4 top-1/2 -translate-y-1/2 font-body text-sm text-charcoal-light pointer-events-none">
+          {field.suffix}
+        </span>
+      )}
     </div>
   );
 }

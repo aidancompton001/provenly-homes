@@ -37,35 +37,36 @@ export default function Pricing() {
 
     const ctx = gsap.context(() => {
       const cards = grid.querySelectorAll(".pricing-card");
-      gsap.from(cards, {
-        opacity: 0,
-        y: 50,
-        stagger: isMobile ? 0 : 0.12,
-        duration: 0.8,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: grid,
-          start: "top 65%",
-          toggleActions: "play none none none",
-        },
-      });
 
-      // DM line 190: feature list stagger after card appears
-      cards.forEach((card) => {
+      // DM line 186+190: card reveal THEN feature stagger (chained via timeline)
+      cards.forEach((card, i) => {
         const features = card.querySelectorAll(".pricing-feature");
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: card,
+            start: "top 65%",
+            toggleActions: "play none none none",
+          },
+        });
+
+        // Step 1: card reveal
+        tl.from(card, {
+          opacity: 0,
+          y: 50,
+          duration: 0.8,
+          ease: "power2.out",
+          delay: isMobile ? 0 : i * 0.12,
+        });
+
+        // Step 2: feature stagger AFTER card (DM line 190)
         if (features.length > 0) {
-          gsap.from(features, {
+          tl.from(features, {
             opacity: 0,
             x: -10,
             stagger: 0.05,
             duration: 0.4,
             ease: "power2.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 55%",
-              toggleActions: "play none none none",
-            },
-          });
+          }, "-=0.2"); // slight overlap for natural feel
         }
       });
     }, grid);

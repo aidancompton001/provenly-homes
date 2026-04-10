@@ -96,11 +96,6 @@ html.lenis, html.lenis body {
   overscroll-behavior: contain;
 }
 
-/* DM line 324: Label float on focus — CSS transition */
-.form-input-wrapper label {
-  transition: transform 200ms ease, font-size 200ms ease;
-}
-
 /* Moving Border button (DM line 258: Aceternity Moving Border pattern) */
 .moving-border-btn::before {
   content: '';
